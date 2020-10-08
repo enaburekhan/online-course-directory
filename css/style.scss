@@ -171,25 +171,72 @@ body {
           align-items: $alignCenter;
       }
 
+      .img-container h5 {
+        /*font-size: 30px;*/
+        text-shadow: 2px 2px $colorblack;
+    }
+
+      @include tablet {
+        .img-container {
+            /*border: 1px solid purple;*/
+            height: 60vh;
+            justify-content: $jcenter;   
+        }
+
+        .img-container h5 {
+            font-size: 30px;
+        }
+      }
+
       .search-container {
           /*border: 1px solid red;*/
           height: 7vh;
           display: $flex;
           flex-direction: $direction;
           justify-content: flex-start;
+          align-items: $alignCenter;
           background-color: #C1C1C8;
+          width: 45vw;
+          border-radius: 3px;
+          margin-bottom: 1px;
+      }
+      
+      @include tablet {
+        .search-container {
+            /*border: 1px solid red;*/
+            height: 13vh;
+            width: 45vw;
+            justify-content: $jcenter;
+            background-color: #C1C1C8;
+            margin-bottom: 10px;
+        }
       }
 
       .form-control,
       .form-search {
           height: 2vh;
           border-radius: 0;
+          width: 40vw;
+      }
+
+      @include tablet {
+        .form-control,
+        .form-search {
+            height: 3vh;
+        }
+  
       }
 
       .form-search {
           background-color: $primaryColor;
           border: 1px solid $primaryColor;
-          
+          margin-top: 2px;      
+      }
+
+      @include tablet {
+        .form-search {
+            margin-top: 7px;      
+        } 
       }
 
       ::placeholder {
@@ -200,14 +247,33 @@ body {
       }
 
       .key-word {
-          font-size: 10px;
+          font-size: 8px;
           color: $colorblack;
+          align-self: $flexstart;
+          margin-left: 7px;
+      }
+
+      @include tablet {
+        .key-word {
+            font-size: 10px;
+            margin-left: 17px;
+            font-weight: $font-weight-700;
+            /*border: 1px solid red;*/
+        }
       }
 
       .how-it-works {
           font-size: 12px;
           background-color: #C1C1C8;
           color: $colorblack;
+      }
+
+      @include tablet {
+        .how-it-works {
+            font-size: 13px;
+            /*border: 1px solid red;*/
+            padding: $padding;
+        } 
       }
   }
   

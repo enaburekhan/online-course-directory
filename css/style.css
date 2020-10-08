@@ -142,6 +142,24 @@ main .img-container {
           align-items: center;
 }
 
+main .img-container h5 {
+  /*font-size: 30px;*/
+  text-shadow: 2px 2px #111;
+}
+
+@media (min-width: 768px) {
+  main .img-container {
+    /*border: 1px solid purple;*/
+    height: 60vh;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  main .img-container h5 {
+    font-size: 30px;
+  }
+}
+
 main .search-container {
   /*border: 1px solid red;*/
   height: 7vh;
@@ -155,18 +173,52 @@ main .search-container {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-color: #C1C1C8;
+  width: 45vw;
+  border-radius: 3px;
+  margin-bottom: 1px;
+}
+
+@media (min-width: 768px) {
+  main .search-container {
+    /*border: 1px solid red;*/
+    height: 13vh;
+    width: 45vw;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    background-color: #C1C1C8;
+    margin-bottom: 10px;
+  }
 }
 
 main .form-control,
 main .form-search {
   height: 2vh;
   border-radius: 0;
+  width: 40vw;
+}
+
+@media (min-width: 768px) {
+  main .form-control,
+  main .form-search {
+    height: 3vh;
+  }
 }
 
 main .form-search {
   background-color: #d35649;
   border: 1px solid #d35649;
+  margin-top: 2px;
+}
+
+@media (min-width: 768px) {
+  main .form-search {
+    margin-top: 7px;
+  }
 }
 
 main ::-webkit-input-placeholder {
@@ -194,13 +246,33 @@ main ::placeholder {
 }
 
 main .key-word {
-  font-size: 10px;
+  font-size: 8px;
   color: #111;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  margin-left: 7px;
+}
+
+@media (min-width: 768px) {
+  main .key-word {
+    font-size: 10px;
+    margin-left: 17px;
+    font-weight: 700;
+    /*border: 1px solid red;*/
+  }
 }
 
 main .how-it-works {
   font-size: 12px;
   background-color: #C1C1C8;
   color: #111;
+}
+
+@media (min-width: 768px) {
+  main .how-it-works {
+    font-size: 13px;
+    /*border: 1px solid red;*/
+    padding: 5px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
