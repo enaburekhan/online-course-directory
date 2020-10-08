@@ -310,4 +310,10 @@ main h1 {
   font-weight: 900;
   margin-top: 40px;
 }
+
+@media (min-width: 768px) {
+  main h1 {
+    font-size: 20px;
+  }
+}
 /*# sourceMappingURL=style.css.map */

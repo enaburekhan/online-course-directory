@@ -305,5 +305,11 @@ body {
           font-weight: $font-weight;
           margin-top: 40px;
       }
+
+      @include tablet {
+          h1 {
+              font-size: 20px;
+          }
+      }
   }
   
