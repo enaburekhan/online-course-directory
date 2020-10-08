@@ -311,5 +311,12 @@ body {
               font-size: 20px;
           }
       }
+
+      @include desktop {    
+        h1 {
+            font-size: 22px;
+            margin-bottom: 30px;
+        }
+      }
   }
   

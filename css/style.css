@@ -316,4 +316,11 @@ main h1 {
     font-size: 20px;
   }
 }
+
+@media (min-width: 1024px) {
+  main h1 {
+    font-size: 22px;
+    margin-bottom: 30px;
+  }
+}
 /*# sourceMappingURL=style.css.map */
