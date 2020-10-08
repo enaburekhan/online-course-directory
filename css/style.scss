@@ -199,16 +199,24 @@ body {
           width: 45vw;
           border-radius: 3px;
           margin-bottom: 1px;
+          opacity: 0.8;
       }
       
       @include tablet {
         .search-container {
             /*border: 1px solid red;*/
             height: 13vh;
-            width: 45vw;
+            width: 55vw;
             justify-content: $jcenter;
             background-color: #C1C1C8;
             margin-bottom: 10px;
+            
+        }
+
+        .form-search-container {
+            /*border: 1px solid red;*/
+            @include flexCenter();
+            justify-content: $jcenter;
         }
       }
 
@@ -222,7 +230,7 @@ body {
       @include tablet {
         .form-control,
         .form-search {
-            height: 3vh;
+            height: 4vh;
         }
   
       }
@@ -235,8 +243,20 @@ body {
 
       @include tablet {
         .form-search {
-            margin-top: 7px;      
+            width: 10vw;
+            padding: 2px;
+            background-color: $nativeBlue;
+            border: 1px solid $nativeBlue;     
         } 
+      }
+
+      @include desktop {
+          
+         .form-search {
+            background-color: $primaryColor;
+            border: 1px solid $primaryColor;     
+         }   
+         
       }
 
       ::placeholder {
@@ -249,17 +269,25 @@ body {
       .key-word {
           font-size: 8px;
           color: $colorblack;
-          align-self: $flexstart;
-          margin-left: 7px;
+          align-self: $alignEnd;
+          width: 42vw;
+          font-weight: $font-weight-700;
+          /*border: 1px solid red;*/
       }
 
       @include tablet {
         .key-word {
-            font-size: 10px;
-            margin-left: 17px;
+            font-size: 12px;
             font-weight: $font-weight-700;
+            width: 52.5vw;
             /*border: 1px solid red;*/
         }
+      }
+
+      @include desktop {
+          .key-word {
+            /*margin-left: 25px;*/ 
+          }
       }
 
       .how-it-works {
