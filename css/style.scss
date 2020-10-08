@@ -78,7 +78,8 @@ body {
          flex-direction: $direction;
          justify-content: space-around;
          height: 12vh;
-         background-color: $primaryColor;      
+         background-color: $primaryColor; 
+         z-index: 7;     
       }
 
       .bottom-nav-large {
@@ -155,9 +156,58 @@ body {
       .bottom-nav-mobile a {
           color: $colorWhite;
       }
-
-      
-
     
+  }
+
+  main {
+      margin-top: 82px;
+
+      .img-container {
+          /*border: 1px solid purple;*/
+          height: 60vh;
+          display: $flex;
+          flex-direction: $direction;
+          justify-content: $flexstart;
+          align-items: $alignCenter;
+      }
+
+      .search-container {
+          /*border: 1px solid red;*/
+          height: 7vh;
+          display: $flex;
+          flex-direction: $direction;
+          justify-content: flex-start;
+          background-color: #C1C1C8;
+      }
+
+      .form-control,
+      .form-search {
+          height: 2vh;
+          border-radius: 0;
+      }
+
+      .form-search {
+          background-color: $primaryColor;
+          border: 1px solid $primaryColor;
+          
+      }
+
+      ::placeholder {
+          font-size: 10px;
+          color: $colorWhite;
+          text-align: $textCenter;
+          
+      }
+
+      .key-word {
+          font-size: 10px;
+          color: $colorblack;
+      }
+
+      .how-it-works {
+          font-size: 12px;
+          background-color: #C1C1C8;
+          color: $colorblack;
+      }
   }
   

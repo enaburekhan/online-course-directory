@@ -31,6 +31,7 @@ header nav {
       justify-content: space-around;
   height: 12vh;
   background-color: #d35649;
+  z-index: 7;
 }
 
 header .bottom-nav-large {
@@ -117,5 +118,89 @@ header .bottom-nav-mobile {
 
 header .bottom-nav-mobile a {
   color: #fff;
+}
+
+main {
+  margin-top: 82px;
+}
+
+main .img-container {
+  /*border: 1px solid purple;*/
+  height: 60vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .search-container {
+  /*border: 1px solid red;*/
+  height: 7vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  background-color: #C1C1C8;
+}
+
+main .form-control,
+main .form-search {
+  height: 2vh;
+  border-radius: 0;
+}
+
+main .form-search {
+  background-color: #d35649;
+  border: 1px solid #d35649;
+}
+
+main ::-webkit-input-placeholder {
+  font-size: 10px;
+  color: #fff;
+  text-align: center;
+}
+
+main :-ms-input-placeholder {
+  font-size: 10px;
+  color: #fff;
+  text-align: center;
+}
+
+main ::-ms-input-placeholder {
+  font-size: 10px;
+  color: #fff;
+  text-align: center;
+}
+
+main ::placeholder {
+  font-size: 10px;
+  color: #fff;
+  text-align: center;
+}
+
+main .key-word {
+  font-size: 10px;
+  color: #111;
+}
+
+main .how-it-works {
+  font-size: 12px;
+  background-color: #C1C1C8;
+  color: #111;
 }
 /*# sourceMappingURL=style.css.map */
