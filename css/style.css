@@ -13,7 +13,7 @@ body {
 }
 
 header nav {
-  border: 1px solid black;
+  /*border: 1px solid black;*/
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -33,6 +33,10 @@ header nav {
   background-color: #d35649;
 }
 
+header .bottom-nav-large {
+  display: none;
+}
+
 @media (min-width: 768px) {
   header nav {
     border: 1px solid black;
@@ -43,10 +47,39 @@ header nav {
   }
 }
 
+@media (min-width: 1024px) {
+  header nav .bottom-nav-mobile {
+    display: none;
+  }
+  header nav .bottom-nav-large {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    /*border: 1px solid yellow;*/
+    width: 45vw;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    font-size: 13px;
+    font-weight: 700;
+  }
+  header nav .bottom-nav-large a {
+    color: #fff;
+  }
+}
+
 header .top-nav a {
   /*border: 1px solid white;*/
   color: #fff;
   font-weight: 700;
+  font-size: 25px;
+}
+
+@media (min-width: 1024px) {
+  header .top-nav {
+    /*border: 1px solid white;*/
+    width: 32vw;
+  }
 }
 
 header .bottom-nav-mobile {
@@ -84,9 +117,5 @@ header .bottom-nav-mobile {
 
 header .bottom-nav-mobile a {
   color: #fff;
-}
-
-header .bottom-nav-large {
-  display: none;
 }
 /*# sourceMappingURL=style.css.map */

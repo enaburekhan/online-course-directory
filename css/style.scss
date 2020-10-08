@@ -72,18 +72,45 @@ body {
 
   header {
       
-      nav { border: 1px solid black;
+      nav {
+         /*border: 1px solid black;*/
          @include flexCenter();
          flex-direction: $direction;
          justify-content: space-around;
          height: 12vh;
          background-color: $primaryColor;      
       }
+
+      .bottom-nav-large {
+        display: $none;
+     }
       
        @include tablet {
            nav {
             border: 1px solid black;
             flex-direction: $row;
+           }
+       }
+
+       @include desktop {
+           nav {
+            
+             .bottom-nav-mobile {
+                display: $none;
+            }
+
+            .bottom-nav-large {
+                display: $flex;
+                /*border: 1px solid yellow;*/
+                width: 45vw;
+                justify-content: $between;
+                font-size: 13px;
+                font-weight: $font-weight-700;
+             }
+
+             .bottom-nav-large a {
+                 color: $colorWhite;
+             }
            }
        }
 
@@ -93,6 +120,16 @@ body {
           /*border: 1px solid white;*/
           color: $colorWhite;
           font-weight: $font-weight-700;
+          font-size: 25px;
+      }
+
+      @include desktop {
+
+        .top-nav {
+            /*border: 1px solid white;*/
+            width: 32vw;
+        }
+          
       }
 
       .bottom-nav-mobile {
@@ -119,9 +156,7 @@ body {
           color: $colorWhite;
       }
 
-      .bottom-nav-large {
-        display: $none;
-     }
+      
 
     
   }
