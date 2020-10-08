@@ -284,11 +284,6 @@ body {
         }
       }
 
-      @include desktop {
-          .key-word {
-            /*margin-left: 25px;*/ 
-          }
-      }
 
       .how-it-works {
           font-size: 12px;
@@ -302,6 +297,13 @@ body {
             /*border: 1px solid red;*/
             padding: $padding;
         } 
+      }
+
+      h1 {
+          font-size: 18px;
+          color: $primaryColor;
+          font-weight: $font-weight;
+          margin-top: 40px;
       }
   }
   

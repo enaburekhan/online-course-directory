@@ -290,12 +290,6 @@ main .key-word {
   }
 }
 
-@media (min-width: 1024px) {
-  main .key-word {
-    /*margin-left: 25px;*/
-  }
-}
-
 main .how-it-works {
   font-size: 12px;
   background-color: #C1C1C8;
@@ -308,5 +302,12 @@ main .how-it-works {
     /*border: 1px solid red;*/
     padding: 5px;
   }
+}
+
+main h1 {
+  font-size: 18px;
+  color: #d35649;
+  font-weight: 900;
+  margin-top: 40px;
 }
 /*# sourceMappingURL=style.css.map */
