@@ -33,18 +33,24 @@ header nav {
   background-color: #d35649;
 }
 
+@media (min-width: 768px) {
+  header nav {
+    border: 1px solid black;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
 header .top-nav a {
-  border: 1px solid white;
+  /*border: 1px solid white;*/
   color: #fff;
   font-weight: 700;
 }
 
-header .bottom-nav-large {
-  display: none;
-}
-
 header .bottom-nav-mobile {
-  border: 1px solid purple;
+  /*border: 1px solid purple;*/
   width: 60vw;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -57,7 +63,30 @@ header .bottom-nav-mobile {
           align-items: center;
 }
 
+@media (min-width: 768px) {
+  header .bottom-nav-mobile {
+    /*border: 1px solid purple;*/
+    width: 40vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  header .bottom-nav-large {
+    display: none;
+  }
+}
+
 header .bottom-nav-mobile a {
   color: #fff;
+}
+
+header .bottom-nav-large {
+  display: none;
 }
 /*# sourceMappingURL=style.css.map */

@@ -71,33 +71,58 @@ body {
   $topnavgray: #969696;
 
   header {
-      nav {
-        border: 1px solid black;
+      
+      nav { border: 1px solid black;
          @include flexCenter();
          flex-direction: $direction;
          justify-content: space-around;
          height: 12vh;
          background-color: $primaryColor;      
       }
+      
+       @include tablet {
+           nav {
+            border: 1px solid black;
+            flex-direction: $row;
+           }
+       }
+
+        
 
       .top-nav a {
-          border: 1px solid white;
+          /*border: 1px solid white;*/
           color: $colorWhite;
           font-weight: $font-weight-700;
       }
 
-      .bottom-nav-large {
-          display: $none;
-      }
-
       .bottom-nav-mobile {
-          border: 1px solid purple;
+          /*border: 1px solid purple;*/
           width: 60vw;
           @include flexCenter();
+      }
+
+      @include tablet {
+        .bottom-nav-mobile {
+            /*border: 1px solid purple;*/
+            width: 40vw;
+            @include flexCenter();
+        }
+
+        .bottom-nav-large {
+            display: $none;
+         }
+        
+        
       }
 
       .bottom-nav-mobile a {
           color: $colorWhite;
       }
+
+      .bottom-nav-large {
+        display: $none;
+     }
+
+    
   }
   
