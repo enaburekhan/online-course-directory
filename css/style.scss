@@ -381,27 +381,120 @@ body {
   }
 
   footer {
-
+     background-color: #000;
     .top-footer-container {
       height: 10vh;
       /*border: 1px solid purple;*/
       display: $flex;
       align-items: $alignCenter;
+      justify-content: $jcenter;
       background-color: #000;
     }
 
     .top-footer {
-      font-size: 8px;
+      font-size: 7px;
       font-weight: $font-weight;
       /*border: 1px solid red;*/
-      height: 5vh;
-      width: 100%;
+      height: 4vh;
+      width: $width-95;
       color: $colorWhite;
+      border-top: 0.1px solid rgb(83, 79, 79);
+      border-bottom: 0.1px solid rgb(83, 79, 79);
 
     }
 
     ul {
       list-style-type: none;
+    }
+
+    .footer-top-icon {
+      display: $none;
+    }
+
+    @include tablet {
+      .top-footer {
+        font-size: 9px;
+        height: 3vh;
+
+      }
+
+      .top-footer-container {
+        position: relative;
+      }
+
+      .footer-top-icon {
+         display: flex;
+         align-items: $alignCenter;
+         justify-content: $jcenter;
+         left: 47.7%;  
+         bottom: 27px;
+         position: absolute;
+         width: 5vw;
+         height: 5vh;
+         border-radius: $border-radius;
+         border: 1px solid rgb(83, 79, 79);
+         background-color: $colorblack;
+         text-align: $textCenter;
+         color: $colorWhite;
+
+      }
+    }
+    .footer-middle-container {
+      display: $none;
+    }
+
+
+    @include tablet {
+      .footer-middle-container {
+        display: block;
+        background-color: #000;
+        width: $width-95;
+      }
+      .eric {
+        background-color: #000;
+        width: 15vw;
+        border: 1px solid rgb(83, 79, 79);
+      }
+      .send {
+        width: 7vw;
+        text-align: $textCenter;
+        background-color:  rgb(71, 68, 68);
+        border: 1px solid rgb(71, 68, 68);
+        
+      }
+
+      ::placeholder {
+        font-size: 14px;
+        color: $colorWhite;
+      }
+
+      .footer-top-middle,
+      .footer-center-middle,
+      .footer-center-bottom {
+        /*border: 1px solid red;*/
+        text-align: $textCenter;
+        width: 30vw;
+      }
+
+      .footer-top-middle p,
+      .footer-center-middle p,
+      .footer-center-bottom p {
+        color: $colorWhite;
+        font-size: 12px;
+        /*font-weight: $font-weight-700;*/
+      }
+
+      .footer-center-middle-nested span {
+        /*border: 1px solid purple;*/
+        font-size: 11px;
+        color: $colorWhite;
+      }
+
+      #info-eric,
+      .possibility {
+        color: $primaryColor;
+        /*border: 1px solid hotpink;*/
+      }
     }
 
     .footer-bottom-wrapper {
@@ -410,15 +503,37 @@ body {
       
     }
 
+    @include tablet {
+      .footer-bottom-wrapper {
+        height: 10vh;
+        
+        
+      }
+    }
+
     .footer-bottom-icons {
       font-size: 12px;
-      /*border: 1px solid red;*/
       width: 40vw;
+    }
+
+    @include tablet {
+      .footer-bottom-icons {
+       /*border: 1px solid red;*/
+        width: 20vw;
+      }
     }
 
     .power-container {
       font-size: 12px;
       font-weight: $font-weight-700;
     }
+
+    @include tablet {
+      .power-container {
+        /*border: 1px solid hotpink;*/
+        font-size: 11px;
+      }
+    }
+
   }
   
