@@ -73,7 +73,6 @@ body {
   header {
       
       nav {
-         /*border: 1px solid black;*/
          @include flexCenter();
          flex-direction: $direction;
          justify-content: space-around;
@@ -102,7 +101,6 @@ body {
 
             .bottom-nav-large {
                 display: $flex;
-                /*border: 1px solid yellow;*/
                 width: 45vw;
                 justify-content: $between;
                 font-size: 13px;
@@ -118,7 +116,6 @@ body {
         
 
       .top-nav a {
-          /*border: 1px solid white;*/
           color: $colorWhite;
           font-weight: $font-weight-700;
           font-size: 25px;
@@ -127,21 +124,18 @@ body {
       @include desktop {
 
         .top-nav {
-            /*border: 1px solid white;*/
             width: 32vw;
         }
           
       }
 
       .bottom-nav-mobile {
-          /*border: 1px solid purple;*/
           width: 60vw;
           @include flexCenter();
       }
 
       @include tablet {
         .bottom-nav-mobile {
-            /*border: 1px solid purple;*/
             width: 40vw;
             @include flexCenter();
         }
@@ -163,7 +157,6 @@ body {
       margin-top: 82px;
 
       .img-container {
-          /*border: 1px solid purple;*/
           height: 60vh;
           display: $flex;
           flex-direction: $direction;
@@ -172,13 +165,11 @@ body {
       }
 
       .img-container h5 {
-        /*font-size: 30px;*/
         text-shadow: 2px 2px $colorblack;
     }
 
       @include tablet {
         .img-container {
-            /*border: 1px solid purple;*/
             height: 60vh;
             justify-content: $jcenter;   
         }
@@ -189,7 +180,6 @@ body {
       }
 
       .search-container {
-          /*border: 1px solid red;*/
           height: 7vh;
           display: $flex;
           flex-direction: $direction;
@@ -204,7 +194,6 @@ body {
       
       @include tablet {
         .search-container {
-            /*border: 1px solid red;*/
             height: 13vh;
             width: 55vw;
             justify-content: $jcenter;
@@ -214,7 +203,6 @@ body {
         }
 
         .form-search-container {
-            /*border: 1px solid red;*/
             @include flexCenter();
             justify-content: $jcenter;
         }
@@ -272,7 +260,6 @@ body {
           align-self: $alignEnd;
           width: 42vw;
           font-weight: $font-weight-700;
-          /*border: 1px solid red;*/
       }
 
       @include tablet {
@@ -280,7 +267,6 @@ body {
             font-size: 12px;
             font-weight: $font-weight-700;
             width: 52.5vw;
-            /*border: 1px solid red;*/
         }
       }
 
@@ -294,7 +280,6 @@ body {
       @include tablet {
         .how-it-works {
             font-size: 13px;
-            /*border: 1px solid red;*/
             padding: $padding;
         } 
       }
@@ -325,6 +310,12 @@ body {
         color: $colorWhite;
       }
 
+      @include tablet {
+        .course {
+          width: 80vw;
+        }
+      }
+
       @include desktop {
         .take-course-container {
           display: $flex;
@@ -334,6 +325,7 @@ body {
 
         .course {
           width: 50vw;
+
         }
   
       }
@@ -341,7 +333,6 @@ body {
      
       .students-img img {
           width: 40vw;
-          /*border: 1px solid red;*/
           border-radius: 50%;
       }
 
@@ -384,7 +375,6 @@ body {
      background-color: #000;
     .top-footer-container {
       height: 10vh;
-      /*border: 1px solid purple;*/
       display: $flex;
       align-items: $alignCenter;
       justify-content: $jcenter;
@@ -394,7 +384,6 @@ body {
     .top-footer {
       font-size: 7px;
       font-weight: $font-weight;
-      /*border: 1px solid red;*/
       height: 4vh;
       width: $width-95;
       color: $colorWhite;
@@ -426,17 +415,32 @@ body {
          display: flex;
          align-items: $alignCenter;
          justify-content: $jcenter;
-         left: 47.7%;  
-         bottom: 27px;
+         left: 47%;  
+         bottom: 20px;
          position: absolute;
-         width: 5vw;
-         height: 5vh;
+         width: 50px;
+         height: 45px;
          border-radius: $border-radius;
          border: 1px solid rgb(83, 79, 79);
          background-color: $colorblack;
          text-align: $textCenter;
          color: $colorWhite;
 
+      }
+    }
+
+    @include desktop {
+      .top-footer {
+        font-size: 10px;
+      }
+    }
+
+    @include desktop {
+      .footer-top-icon {
+        width: 60px;
+        height: 55px;
+        left: 47%;
+        bottom: 17px;
       }
     }
     .footer-middle-container {
@@ -471,7 +475,6 @@ body {
       .footer-top-middle,
       .footer-center-middle,
       .footer-center-bottom {
-        /*border: 1px solid red;*/
         text-align: $textCenter;
         width: 30vw;
       }
@@ -481,11 +484,9 @@ body {
       .footer-center-bottom p {
         color: $colorWhite;
         font-size: 12px;
-        /*font-weight: $font-weight-700;*/
       }
 
       .footer-center-middle-nested span {
-        /*border: 1px solid purple;*/
         font-size: 11px;
         color: $colorWhite;
       }
@@ -493,13 +494,13 @@ body {
       #info-eric,
       .possibility {
         color: $primaryColor;
-        /*border: 1px solid hotpink;*/
       }
     }
 
     .footer-bottom-wrapper {
       background-color: #0C0C0C;
       color: $colorWhite;
+      height: 6vh;
       
     }
 
@@ -512,25 +513,23 @@ body {
     }
 
     .footer-bottom-icons {
-      font-size: 12px;
+      font-size: 10px;
       width: 40vw;
     }
 
     @include tablet {
       .footer-bottom-icons {
-       /*border: 1px solid red;*/
         width: 20vw;
       }
     }
 
     .power-container {
-      font-size: 12px;
+      font-size: 9px;
       font-weight: $font-weight-700;
     }
 
     @include tablet {
       .power-container {
-        /*border: 1px solid hotpink;*/
         font-size: 11px;
       }
     }

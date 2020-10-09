@@ -13,7 +13,6 @@ body {
 }
 
 header nav {
-  /*border: 1px solid black;*/
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -56,7 +55,6 @@ header .bottom-nav-large {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    /*border: 1px solid yellow;*/
     width: 45vw;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
@@ -70,7 +68,6 @@ header .bottom-nav-large {
 }
 
 header .top-nav a {
-  /*border: 1px solid white;*/
   color: #fff;
   font-weight: 700;
   font-size: 25px;
@@ -78,13 +75,11 @@ header .top-nav a {
 
 @media (min-width: 1024px) {
   header .top-nav {
-    /*border: 1px solid white;*/
     width: 32vw;
   }
 }
 
 header .bottom-nav-mobile {
-  /*border: 1px solid purple;*/
   width: 60vw;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -99,7 +94,6 @@ header .bottom-nav-mobile {
 
 @media (min-width: 768px) {
   header .bottom-nav-mobile {
-    /*border: 1px solid purple;*/
     width: 40vw;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -125,7 +119,6 @@ main {
 }
 
 main .img-container {
-  /*border: 1px solid purple;*/
   height: 60vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -143,13 +136,11 @@ main .img-container {
 }
 
 main .img-container h5 {
-  /*font-size: 30px;*/
   text-shadow: 2px 2px #111;
 }
 
 @media (min-width: 768px) {
   main .img-container {
-    /*border: 1px solid purple;*/
     height: 60vh;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -161,7 +152,6 @@ main .img-container h5 {
 }
 
 main .search-container {
-  /*border: 1px solid red;*/
   height: 7vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -185,7 +175,6 @@ main .search-container {
 
 @media (min-width: 768px) {
   main .search-container {
-    /*border: 1px solid red;*/
     height: 13vh;
     width: 55vw;
     -webkit-box-pack: center;
@@ -195,7 +184,6 @@ main .search-container {
     margin-bottom: 10px;
   }
   main .form-search-container {
-    /*border: 1px solid red;*/
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -278,7 +266,6 @@ main .key-word {
       align-self: flex-end;
   width: 42vw;
   font-weight: 700;
-  /*border: 1px solid red;*/
 }
 
 @media (min-width: 768px) {
@@ -286,7 +273,6 @@ main .key-word {
     font-size: 12px;
     font-weight: 700;
     width: 52.5vw;
-    /*border: 1px solid red;*/
   }
 }
 
@@ -299,7 +285,6 @@ main .how-it-works {
 @media (min-width: 768px) {
   main .how-it-works {
     font-size: 13px;
-    /*border: 1px solid red;*/
     padding: 5px;
   }
 }
@@ -330,6 +315,12 @@ main .take-course-container-2 {
   color: #fff;
 }
 
+@media (min-width: 768px) {
+  main .course {
+    width: 80vw;
+  }
+}
+
 @media (min-width: 1024px) {
   main .take-course-container {
     display: -webkit-box;
@@ -348,7 +339,6 @@ main .take-course-container-2 {
 
 main .students-img img {
   width: 40vw;
-  /*border: 1px solid red;*/
   border-radius: 50%;
 }
 
@@ -398,7 +388,6 @@ footer {
 
 footer .top-footer-container {
   height: 10vh;
-  /*border: 1px solid purple;*/
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -414,7 +403,6 @@ footer .top-footer-container {
 footer .top-footer {
   font-size: 7px;
   font-weight: 900;
-  /*border: 1px solid red;*/
   height: 4vh;
   width: 95%;
   color: #fff;
@@ -448,16 +436,31 @@ footer .footer-top-icon {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    left: 47.7%;
-    bottom: 27px;
+    left: 47%;
+    bottom: 20px;
     position: absolute;
-    width: 5vw;
-    height: 5vh;
+    width: 50px;
+    height: 45px;
     border-radius: 50%;
     border: 1px solid #534f4f;
     background-color: #111;
     text-align: center;
     color: #fff;
+  }
+}
+
+@media (min-width: 1024px) {
+  footer .top-footer {
+    font-size: 10px;
+  }
+}
+
+@media (min-width: 1024px) {
+  footer .footer-top-icon {
+    width: 60px;
+    height: 55px;
+    left: 47%;
+    bottom: 17px;
   }
 }
 
@@ -501,7 +504,6 @@ footer .footer-middle-container {
   footer .footer-top-middle,
   footer .footer-center-middle,
   footer .footer-center-bottom {
-    /*border: 1px solid red;*/
     text-align: center;
     width: 30vw;
   }
@@ -510,23 +512,21 @@ footer .footer-middle-container {
   footer .footer-center-bottom p {
     color: #fff;
     font-size: 12px;
-    /*font-weight: $font-weight-700;*/
   }
   footer .footer-center-middle-nested span {
-    /*border: 1px solid purple;*/
     font-size: 11px;
     color: #fff;
   }
   footer #info-eric,
   footer .possibility {
     color: #d35649;
-    /*border: 1px solid hotpink;*/
   }
 }
 
 footer .footer-bottom-wrapper {
   background-color: #0C0C0C;
   color: #fff;
+  height: 6vh;
 }
 
 @media (min-width: 768px) {
@@ -536,25 +536,23 @@ footer .footer-bottom-wrapper {
 }
 
 footer .footer-bottom-icons {
-  font-size: 12px;
+  font-size: 10px;
   width: 40vw;
 }
 
 @media (min-width: 768px) {
   footer .footer-bottom-icons {
-    /*border: 1px solid red;*/
     width: 20vw;
   }
 }
 
 footer .power-container {
-  font-size: 12px;
+  font-size: 9px;
   font-weight: 700;
 }
 
 @media (min-width: 768px) {
   footer .power-container {
-    /*border: 1px solid hotpink;*/
     font-size: 11px;
   }
 }
