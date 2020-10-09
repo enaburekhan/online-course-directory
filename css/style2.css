@@ -1,0 +1,133 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: "acumin-pro", "Acumin Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+header nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  height: 12vh;
+  background-color: #d35649;
+  z-index: 7;
+}
+
+header .bottom-nav-large {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  header nav {
+    border: 1px solid black;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+@media (min-width: 1024px) {
+  header nav .bottom-nav-mobile {
+    display: none;
+  }
+  header nav .bottom-nav-large {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 45vw;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    font-size: 13px;
+    font-weight: 700;
+  }
+  header nav .bottom-nav-large a {
+    color: #fff;
+  }
+}
+
+header .top-nav a {
+  color: #fff;
+  font-weight: 700;
+  font-size: 25px;
+}
+
+@media (min-width: 1024px) {
+  header .top-nav {
+    width: 32vw;
+  }
+}
+
+header .bottom-nav-mobile {
+  width: 60vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (min-width: 768px) {
+  header .bottom-nav-mobile {
+    width: 40vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  header .bottom-nav-large {
+    display: none;
+  }
+}
+
+header .bottom-nav-mobile a {
+  color: #fff;
+}
+
+main {
+  margin-top: 80px;
+  /*.bg-grad {
+          width: 200px;
+          height: 220px;
+          border: 1px solid red;
+      }*/
+}
+
+main .filter-container {
+  display: none;
+}
+
+main .result-search {
+  font-weight: 700;
+}
+/*# sourceMappingURL=style2.css.map */

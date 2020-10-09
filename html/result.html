@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Online courses directory</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <link rel="stylesheet" href="../css/style2.css"/>
+  <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+  <header>
+      <nav class="fixed-top">
+         <div class="top-nav">
+            <a href="index.html"><i class='fas'>&#xf19d;</i>
+            <spab>Echantill-edu</span></a>
+         </div>
+         <div class="bottom-nav">
+            <div class="bottom-nav-mobile">
+                <a href="result.html"><i class='fab'>&#xf3ee;</i></a>
+                <a href="result.html"><i class="fas fa-portrait fa-lg"></i></a>
+                <a href="result.html"><i class='fas'>&#xf09e;</i></a>
+                <a href="result.html"><i class="fas fa-bars"></i></a>
+            </div>
+             <div class="bottom-nav-large">
+                    <a href="result.html"><i class='fab'>&#xf3ee;</i>
+                    <span>COURSE</span> 
+                    </a>
+                    <a href="result.html"><i class="fas fa-portrait fa-lg"></i>
+                    <span>ABOUT</span>
+                    </a>
+                    <a href="result.html"><i class='fas'>&#xf09e;</i>
+                    <span>BLOG</span>
+                    </a>
+                    <a href="result.html"><i class="fas fa-bars"></i> 
+                    <span>MORE...</span>
+                    </a>
+              </div>
+         </div>  
+         
+      </nav>
+   </header> 
+   <main>
+
+    <section class="filter-container">
+        <h1>Filter By language, level, course, duration and skills. </h1>
+        <form>
+            <select name="language">
+               <optgroup label="language">
+                   <option>English</option>
+                   <option>French</option>
+                   <option>Swahili</option>
+               </optgroup>            
+            </select> 
+            <select name="level">
+                <optgroup label="level">
+                    <option>Beginner</option>
+                    <option>Intermediate</option>
+                    <option>Advanced</option>
+                </optgroup>            
+             </select> 
+             <select name="course">
+                <optgroup label="course">
+                    <option>Scala</option>
+                    <option>Javascript</option>
+                    <option>Ruby</option>
+                </optgroup>            
+             </select> 
+             <select name="duration">
+                <optgroup label="duration">
+                    <option>2 months</option>
+                    <option>3 months</option>
+                    <option>6 months</option>
+                </optgroup>            
+             </select> 
+             <select name="skills">
+                <optgroup label="skills">
+                    <option>Web design</option>
+                    <option>Web developer</option>
+                    <option>Data engineering</option>
+                </optgroup>            
+             </select>
+             
+             <button type="button" class="seach-course">Search</button>
+          
+             <span class="clear-filter">
+                <i class='far'>&#xf044;</i>
+                <button type="reset" class="re-fill">clear-filter</button>
+             </span> 
+        </form>
+     </section>
+   
+     <h6 class="result-search text-dark m-2">Showing 12 results for available related courses</h6>
+     <div class="card bg-dark text-white m-2">
+        <img class="card-img" src="../images/grad3.jpg" alt="image of graduate cap">
+        <div class="card-img-overlay text-center">
+          <h5 class="card-title">Front end course:</h5>
+          <a href="#"><p class="card-text text-white">Html</p></a>
+          <a href="#"><p class="card-text text-white">Css</p></a>  
+          <a href="#"><p class="card-text text-white">Scss</p></a>
+          <a href="#"><p class="card-text text-white">Javascript</p></a>    
+        </div>
+      </div>
+      <div class="card bg-dark text-white m-2">
+        <img class="card-img" src="../images/grad3.jpg" alt="image of graduate cap">
+        <div class="card-img-overlay text-center">
+          <h5 class="card-title">Back end course:</h5>
+          <a href="#"><p class="card-text text-white">Scala</p></a>
+          <a href="#"><p class="card-text text-white">Ruby</p></a>  
+          <a href="#"><p class="card-text text-white">Python</p></a>
+          <a href="#"><p class="card-text text-white">Java</p></a>
+        </div>
+      </div>
+      <div class="card bg-dark text-white m-2">
+        <img class="card-img" src="../images/grad3.jpg" alt="image of graduate cap">
+        <div class="card-img-overlay text-center">
+          <h5 class="card-title">Frame works:</h5>
+          <a href="#"><p class="card-text text-white">Bootstrap</p></a>
+          <a href="#"><p class="card-text text-white">React</p></a>  
+          <a href="#"><p class="card-text text-white">Vue</p></a>
+          <a href="#"><p class="card-text text-white">Ruby on Rails</p></a>
+        </div>
+      </div>
+   </main>
+
+   <footer></footer>
+
+   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+   integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+   crossorigin="anonymous"></script>
+   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+   integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+   crossorigin="anonymous"></script>
+   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+   integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+   crossorigin="anonymous"></script>
+ </body>
+</html>      
