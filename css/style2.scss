@@ -87,7 +87,6 @@ body {
       
        @include tablet {
            nav {
-            border: 1px solid black;
             flex-direction: $row;
            }
        }
@@ -154,9 +153,17 @@ body {
   }
 
   main {
-      margin-top: 80px;
+      margin: 80px 0 100px 0;
+      height: 100%;
       .filter-container {
           display: $none;
+      }
+
+      @include tablet{
+
+        h1 {
+            font-size: 24px;
+        }
       }
 
       @include tablet {
@@ -168,20 +175,23 @@ body {
             width: 100%;
             height: 20vh;
             background-color: #EEEEEE;
-            /*border: 1px solid red;*/
+        } 
+     }   
 
+        @include tablet {
             .search-course {
                 background-color: #457EB4;
                 color: $colorWhite;
                 border: 1px solid #457EB4;
                 border-radius: 2px;
             }
-
+        }  
+         
+        @include tablet {
             .clear-filter .far {
-                width: 28px;
-                height: 28px;
-                padding: 4px 0 5px 0;
-                /*border: 1px solid hotpink;*/
+                width: 25px;
+                height: 30px;
+                padding: 5px 0 3px 0;
                 text-align: $textCenter;
                 margin-right: -5px;
                 color: $colorWhite;
@@ -189,7 +199,8 @@ body {
                 border-top-left-radius: 2px;
                 border-bottom-left-radius: 2px;
             }
-
+        }  
+         @include tablet {
             .clear-filter button {
                 background-color: #E5AB5B;
                 border: 1px solid #E5AB5B;
@@ -197,14 +208,12 @@ body {
                 border-top-right-radius: 2px;
                 border-bottom-right-radius: 2px;
                 color: $colorWhite;
+                width: 80px;
+                height: 30px;
             }
 
         } 
-
-        h1 {
-            font-size: 24px;
-        }
-      }
+       
 
       @include desktop {
         .search-course {
@@ -215,12 +224,178 @@ body {
       .result-search {
         font-weight: $font-weight-700; 
         width: $width-95; 
-        /*border: 1px solid red;*/ 
         height: 8vh; 
         display: $flex;
         align-items: $alignCenter;
         justify-content: $jcenter;
+      }
     }
-
       
-  }
+  
+
+  footer {
+    background-color: #000;
+
+   .top-footer-container {
+     height: 10vh;
+     display: $flex;
+     align-items: $alignCenter;
+     justify-content: $jcenter;
+     background-color: #000;
+   }
+
+   .top-footer {
+     font-size: 7px;
+     font-weight: $font-weight;
+     height: 4vh;
+     width: $width-95;
+     color: $colorWhite;
+     border-top: 0.1px solid rgb(83, 79, 79);
+     border-bottom: 0.1px solid rgb(83, 79, 79);
+
+   }
+
+   ul {
+     list-style-type: none;
+   }
+
+   .footer-top-icon {
+     display: $none;
+   }
+
+   @include tablet {
+     .top-footer {
+       font-size: 9px;
+       height: 3vh;
+
+     }
+
+     .top-footer-container {
+       position: relative;
+     }
+
+     .footer-top-icon {
+        display: flex;
+        align-items: $alignCenter;
+        justify-content: $jcenter;
+        left: 47%;  
+        bottom: 20px;
+        position: absolute;
+        width: 50px;
+        height: 45px;
+        border-radius: $border-radius;
+        border: 1px solid rgb(83, 79, 79);
+        background-color: $colorblack;
+        text-align: $textCenter;
+        color: $colorWhite;
+
+     }
+   }
+
+   @include desktop {
+     .top-footer {
+       font-size: 10px;
+     }
+   }
+
+   @include desktop {
+     .footer-top-icon {
+       width: 60px;
+       height: 55px;
+       left: 47%;
+       bottom: 17px;
+     }
+   }
+   .footer-middle-container {
+     display: $none;
+   }
+
+
+   @include tablet {
+     .footer-middle-container {
+       display: block;
+       background-color: #000;
+       width: $width-95;
+     }
+     .eric {
+       background-color: #000;
+       width: 15vw;
+       border: 1px solid rgb(83, 79, 79);
+     }
+     .send {
+       width: 7vw;
+       text-align: $textCenter;
+       background-color:  rgb(71, 68, 68);
+       border: 1px solid rgb(71, 68, 68);
+       
+     }
+
+     ::placeholder {
+       font-size: 14px;
+       color: $colorWhite;
+     }
+
+     .footer-top-middle,
+     .footer-center-middle,
+     .footer-center-bottom {
+       text-align: $textCenter;
+       width: 30vw;
+     }
+
+     .footer-top-middle p,
+     .footer-center-middle p,
+     .footer-center-bottom p {
+       color: $colorWhite;
+       font-size: 12px;
+     }
+
+     .footer-center-middle-nested span {
+       font-size: 11px;
+       color: $colorWhite;
+     }
+
+     #info-eric,
+     .possibility {
+       color: $primaryColor;
+     }
+   }
+
+   .footer-bottom-wrapper {
+     background-color: #0C0C0C;
+     color: $colorWhite;
+     height: 6vh;
+     
+   }
+
+   @include tablet {
+     .footer-bottom-wrapper {
+       height: 10vh;
+       
+       
+     }
+   }
+
+   .footer-bottom-icons {
+     font-size: 10px;
+     width: 40vw;
+   }
+
+   @include tablet {
+     .footer-bottom-icons {
+       width: 20vw;
+     }
+   }
+
+   .power-container {
+     font-size: 9px;
+     font-weight: $font-weight-700;
+   }
+
+   @include tablet {
+     .power-container {
+       font-size: 11px;
+     }
+   }
+
+}
+ 
