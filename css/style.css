@@ -330,8 +330,24 @@ main .take-course-container-2 {
   color: #fff;
 }
 
+@media (min-width: 1024px) {
+  main .take-course-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    border: 4px solid white;
+  }
+  main .course {
+    width: 50vw;
+  }
+}
+
 main .students-img img {
-  width: 50vw;
+  width: 40vw;
   /*border: 1px solid red;*/
   border-radius: 50%;
 }
