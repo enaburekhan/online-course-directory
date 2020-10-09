@@ -160,12 +160,10 @@ body {
       }
 
       .result-search {
-          font-weight: $font-weight-700;    
+          font-weight: $font-weight-700; 
+          width: $width-95; 
+          /*border: 1px solid red;*/  
       }
 
-      /*.bg-grad {
-          width: 200px;
-          height: 220px;
-          border: 1px solid red;
-      }*/
+      
   }

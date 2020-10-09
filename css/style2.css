@@ -116,11 +116,6 @@ header .bottom-nav-mobile a {
 
 main {
   margin-top: 80px;
-  /*.bg-grad {
-          width: 200px;
-          height: 220px;
-          border: 1px solid red;
-      }*/
 }
 
 main .filter-container {
@@ -129,5 +124,7 @@ main .filter-container {
 
 main .result-search {
   font-weight: 700;
+  width: 95%;
+  /*border: 1px solid red;*/
 }
 /*# sourceMappingURL=style2.css.map */
