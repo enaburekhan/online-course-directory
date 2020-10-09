@@ -127,4 +127,49 @@ main .result-search {
   width: 95%;
   /*border: 1px solid red;*/
 }
+
+@media (min-width: 768px) {
+  main .filter-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
+    height: 20vh;
+    background-color: #EEEEEE;
+    border: 1px solid red;
+  }
+  main .filter-container .search-course {
+    background-color: #457EB4;
+    color: #fff;
+    border: 1px solid #457EB4;
+  }
+  main .filter-container .clear-filter .far {
+    width: 30px;
+    height: 28px;
+    padding: 4px 0 5px 0;
+    /*border: 1px solid hotpink;*/
+    text-align: center;
+    margin-right: -5px;
+    color: #fff;
+    background-color: #E5AB5B;
+  }
+  main .filter-container .clear-filter button {
+    background-color: #E5AB5B;
+    border: 1px solid #E5AB5B;
+    padding: 1px 0;
+  }
+  main h1 {
+    font-size: 24px;
+  }
+}
 /*# sourceMappingURL=style2.css.map */

@@ -165,5 +165,46 @@ body {
           /*border: 1px solid red;*/  
       }
 
+      @include tablet {
+        .filter-container {
+            display: $flex;
+            flex-direction: $direction;
+            align-items: $alignCenter;
+            justify-content: $jcenter;
+            width: 100%;
+            height: 20vh;
+            background-color: #EEEEEE;
+            border: 1px solid red;
+
+            .search-course {
+                background-color: #457EB4;
+                color: $colorWhite;
+                border: 1px solid #457EB4;
+            }
+
+            .clear-filter .far {
+                width: 30px;
+                height: 28px;
+                padding: 4px 0 5px 0;
+                /*border: 1px solid hotpink;*/
+                text-align: $textCenter;
+                margin-right: -5px;
+                color: $colorWhite;
+                background-color: #E5AB5B;
+            }
+
+            .clear-filter button {
+                background-color: #E5AB5B;
+                border: 1px solid #E5AB5B;
+                padding: 1px 0;
+            }
+
+        } 
+
+        h1 {
+            font-size: 24px;
+        }
+      }
+
       
   }
