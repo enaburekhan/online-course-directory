@@ -379,4 +379,46 @@ body {
         color: $colorWhite;
       }
   }
+
+  footer {
+
+    .top-footer-container {
+      height: 10vh;
+      /*border: 1px solid purple;*/
+      display: $flex;
+      align-items: $alignCenter;
+      background-color: #000;
+    }
+
+    .top-footer {
+      font-size: 8px;
+      font-weight: $font-weight;
+      /*border: 1px solid red;*/
+      height: 5vh;
+      width: 100%;
+      color: $colorWhite;
+
+    }
+
+    ul {
+      list-style-type: none;
+    }
+
+    .footer-bottom-wrapper {
+      background-color: #0C0C0C;
+      color: $colorWhite;
+      
+    }
+
+    .footer-bottom-icons {
+      font-size: 12px;
+      /*border: 1px solid red;*/
+      width: 40vw;
+    }
+
+    .power-container {
+      font-size: 12px;
+      font-weight: $font-weight-700;
+    }
+  }
   

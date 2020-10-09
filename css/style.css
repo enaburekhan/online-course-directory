@@ -391,4 +391,45 @@ main .take-course-container-3 {
   background-color: #509BD7;
   color: #fff;
 }
+
+footer .top-footer-container {
+  height: 10vh;
+  /*border: 1px solid purple;*/
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #000;
+}
+
+footer .top-footer {
+  font-size: 8px;
+  font-weight: 900;
+  /*border: 1px solid red;*/
+  height: 5vh;
+  width: 100%;
+  color: #fff;
+}
+
+footer ul {
+  list-style-type: none;
+}
+
+footer .footer-bottom-wrapper {
+  background-color: #0C0C0C;
+  color: #fff;
+}
+
+footer .footer-bottom-icons {
+  font-size: 12px;
+  /*border: 1px solid red;*/
+  width: 40vw;
+}
+
+footer .power-container {
+  font-size: 12px;
+  font-weight: 700;
+}
 /*# sourceMappingURL=style.css.map */
