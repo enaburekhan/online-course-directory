@@ -323,4 +323,56 @@ main h1 {
     margin-bottom: 30px;
   }
 }
+
+main .take-course-container,
+main .take-course-container-2 {
+  background-color: #E27F65;
+  color: #fff;
+}
+
+main .students-img img {
+  width: 50vw;
+  /*border: 1px solid red;*/
+  border-radius: 50%;
+}
+
+main .search-engine,
+main .team-research,
+main .laptop {
+  font-size: 13px;
+}
+
+main .find-a-course,
+main .free-sign-up {
+  background-color: #FAFDFF;
+  color: #d35649;
+  width: 100px;
+  height: 3vh;
+  text-align: center;
+  font-size: 14px;
+  padding: 3px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main .take-course-container-2 {
+  background-color: #98A4A5;
+}
+
+main .free-sign-up {
+  color: #c5c2c2;
+  font-weight: 700;
+}
+
+main .take-course-container-3 {
+  background-color: #509BD7;
+  color: #fff;
+}
 /*# sourceMappingURL=style.css.map */

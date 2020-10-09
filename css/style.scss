@@ -312,11 +312,57 @@ body {
           }
       }
 
-      @include desktop {    
+      @include desktop {   
         h1 {
             font-size: 22px;
             margin-bottom: 30px;
         }
+      }
+
+      .take-course-container,
+      .take-course-container-2 {
+        background-color: #E27F65;
+        color: $colorWhite;
+      }
+
+      .students-img img {
+          width: 50vw;
+          /*border: 1px solid red;*/
+          border-radius: 50%;
+      }
+
+      .search-engine,
+      .team-research,
+      .laptop {
+        font-size: 13px;
+      }
+
+      .find-a-course,
+      .free-sign-up {
+        background-color: #FAFDFF;
+        color: $primaryColor;
+        width: 100px;
+        height: 3vh;
+        text-align: $textCenter;
+        font-size: 14px;
+        padding: 3px 0;
+        display: $flex;
+        align-items: $alignCenter;
+        justify-content: $jcenter;
+      }
+
+      .take-course-container-2 {
+        background-color: #98A4A5;
+      }
+
+      .free-sign-up {
+        color:  $formColor;
+        font-weight: $font-weight-700;
+      }
+
+      .take-course-container-3  {
+        background-color: #509BD7;
+        color: $colorWhite;
       }
   }
   
