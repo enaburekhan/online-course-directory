@@ -363,6 +363,12 @@ body {
       }
     }
 
+    @include desktop {
+      .fill-in-credentials {
+        width: 380px;
+      }
+    }
+
     .register-form-container {
       /*border: 1px solid black;*/
       width: 90%;
@@ -379,6 +385,12 @@ body {
       }
     }
 
+    @include desktop {
+      .name {
+        width: 380px;
+      }
+    }
+
     /*.register-margin {
       border: 1px solid red;
     }*/
@@ -391,6 +403,12 @@ body {
     @include tablet {
       .sign-up {
         width: 330px;
+      }
+    }
+
+    @include desktop {
+      .sign-up {
+        width: 380px;
       }
     }
 

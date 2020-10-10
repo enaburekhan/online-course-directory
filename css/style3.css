@@ -315,6 +315,12 @@ main .fill-in-credentials {
   }
 }
 
+@media (min-width: 1024px) {
+  main .fill-in-credentials {
+    width: 380px;
+  }
+}
+
 main .register-form-container {
   /*border: 1px solid black;*/
   width: 90%;
@@ -330,6 +336,12 @@ main .name {
   }
 }
 
+@media (min-width: 1024px) {
+  main .name {
+    width: 380px;
+  }
+}
+
 main .sign-up {
   /*border: 1px solid purple;*/
   width: 250px;
@@ -338,6 +350,12 @@ main .sign-up {
 @media (min-width: 768px) {
   main .sign-up {
     width: 330px;
+  }
+}
+
+@media (min-width: 1024px) {
+  main .sign-up {
+    width: 380px;
   }
 }
 
