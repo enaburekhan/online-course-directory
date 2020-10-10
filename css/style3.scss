@@ -164,6 +164,12 @@ body {
   main {
     margin-top: 90px;
 
+    @include desktop {
+      main {
+        margin-top: 150px;
+      }
+    }
+
     /*.scala-wrapper {
       border: 1px solid purple;
       width: 100vw;
@@ -299,6 +305,19 @@ body {
       height: 200px;
     }
 
+    @include tablet {
+      .google-img {
+        height: 300px;
+      }
+    }
+
+    @include desktop {
+      .google-img {
+        width: 100%;
+        height: 400px;
+      }
+    }
+
     .click-details {
       /*border: 1px solid purple;*/
       height: 8vh;
@@ -315,5 +334,20 @@ body {
       height: 350px;
       min-width: 80%;
 
+    }
+
+    @include tablet {
+      .map-directions-container {
+         height: 450px;
+   
+       }
+    }
+
+    @include desktop {
+      .map-directions-container {
+        
+         height: 550px;
+   
+       }
     }
   }
