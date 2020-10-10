@@ -1,0 +1,160 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: "acumin-pro", "Acumin Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+
+@mixin flexCenter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  @mixin gridColumn {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+  
+  
+  $tablet: 768px;
+  
+  @mixin tablet {
+    @media (min-width: #{$tablet}) {
+      @content;
+    }
+  }
+  
+  $desktop: 1024px;
+  
+  @mixin desktop {
+    @media (min-width: #{$desktop}) {
+      @content;
+    }
+  }
+  
+  $primaryColor: #d35649;
+  $direction: column;
+  $between: space-between;
+  $colorWhite: #fff;
+  $formColor: #c5c2c2;
+  $border: 5px;
+  $border-3: 3px;
+  $font-weight: 900;
+  $textCenter: center;
+  $width-95: 95%;
+  $flexstart: flex-start;
+  $flex: flex;
+  $colorblack: #111;
+  $colorgray: #7d8486;
+  $font-weight-700: 700;
+  $padding: 5px;
+  $colordkgray: #1f1f1f;
+  $border-radius: 50%;
+  $colorbrown: #e17e65;
+  $alignCenter: center;
+  $row: row;
+  $jcenter: center;
+  $alignEnd: flex-end;
+  $nativeBlue: #519bd7;
+  $none: none;
+  $mainNav: #d2d2d2;
+  $darklight: lighten(#111, 60%);
+  $topnavgray: #969696;
+
+  header {
+      
+      nav {
+         @include flexCenter();
+         flex-direction: $direction;
+         justify-content: space-around;
+         height: 12vh;
+         background-color: $primaryColor; 
+         z-index: 7;     
+      }
+
+      .bottom-nav-large {
+        display: $none;
+     }
+      
+       @include tablet {
+           nav {
+            border: 1px solid black;
+            flex-direction: $row;
+           }
+       }
+
+       @include desktop {
+           nav {
+            
+             .bottom-nav-mobile {
+                display: $none;
+            }
+
+            .bottom-nav-large {
+                display: $flex;
+                width: 45vw;
+                justify-content: $between;
+                font-size: 13px;
+                font-weight: $font-weight-700;
+             }
+
+             .bottom-nav-large a {
+                 color: $colorWhite;
+             }
+           }
+       }
+
+        
+
+      .top-nav a {
+          color: $colorWhite;
+          font-weight: $font-weight-700;
+          font-size: 25px;
+      }
+
+      @include desktop {
+
+        .top-nav {
+            width: 32vw;
+        }
+          
+      }
+
+      .bottom-nav-mobile {
+          width: 60vw;
+          @include flexCenter();
+      }
+
+      @include tablet {
+        .bottom-nav-mobile {
+            width: 40vw;
+            @include flexCenter();
+        }
+
+        .bottom-nav-large {
+            display: $none;
+         }
+        
+        
+      }
+
+      .bottom-nav-mobile a {
+          color: $colorWhite;
+      }
+    
+  }
+
+  main {
+    .scala-table-large {
+      display: $none;
+    }
+  }
