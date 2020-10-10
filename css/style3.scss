@@ -40,6 +40,14 @@ body {
       @content;
     }
   }
+
+  $desktop-sm: 992px;
+  
+  @mixin desktop-sm {
+    @media (min-width: #{$desktop-sm}) {
+      @content;
+    }
+  }
   
   $desktop: 1024px;
   
@@ -169,25 +177,17 @@ body {
         margin-top: 150px;
       }
     }
-
-    /*.scala-wrapper {
-      border: 1px solid purple;
-      width: 100vw;
-    }*/
     
     h1 {
-      /*font-size: 35px;*/
       color: $primaryColor;   
     }
 
     .scala-title {
-        /*border: 1px solid red;*/
         width: 300px;
     }
     
     @include tablet {
       .scala-title {
-        /*border: 1px solid red;*/
         width: 550px;
     }
     }
@@ -207,19 +207,16 @@ body {
     }
 
     .scala-apply {
-      /*border: 1px solid red;*/
       width: 310px;
     }
 
     @include tablet {
       .scala-apply {
-        /*border: 1px solid purple;*/
         width: 530px;
       }
     }
     .scala-apply .fas,
     .scala-apply button {
-      /*border: 1px solid red;*/
       width: 25px;
       height: 30px;
       background-color: #509AD7;
@@ -233,7 +230,6 @@ body {
 
     @include tablet {
       .feedback-icon-wrapper {
-        /*border: 1px solid purple;*/
         width: 550px;
         
       }
@@ -246,25 +242,21 @@ body {
     }
 
     .feedback-icons {
-      /*border: 1px solid hotpink;*/
       width: 70%;
     }
 
     @include tablet {
       .feedback-icons {
-        /*border: 1px solid hotpink;*/
         width: 50%;
       }
     }
 
     .students-wrapper {
-      /*border: 1px solid red;*/
       width: 100%;
     }
 
     @include tablet {
       .students-wrapper {
-        /*border: 1px solid red;*/
         width: 70%;
       }
     }
@@ -282,23 +274,13 @@ body {
     }
 
     .map-direction-wrapper {
-      /*border: 1px solid black;*/
       width: 100vw;
     }
 
     .scala-text {
-      /*border: 1px solid hotpink;*/
       width: 100%;
       
     }
-
-   /* @include mobile {
-      .scala-text {
-        border: 1px solid hotpink;
-        width: 95%;
-        
-      }
-    }*/
 
     .google-img {
       width: 100%;
@@ -319,7 +301,6 @@ body {
     }
 
     .click-details {
-      /*border: 1px solid purple;*/
       height: 8vh;
       width: 100%;
       background-color: #F5F5F5;
@@ -330,7 +311,6 @@ body {
     }
 
     .map-directions-container {
-     /* border: 1px solid black;*/
       height: 350px;
       min-width: 80%;
 
@@ -350,7 +330,6 @@ body {
     }
 
     .fill-in-credentials {
-      /*border: 1px solid purple;*/
       width: 250px;
       height: 50px;
       background-color: #DEE2E3;
@@ -370,7 +349,6 @@ body {
     }
 
     .register-form-container {
-      /*border: 1px solid black;*/
       width: 90%;
     }
 
@@ -391,12 +369,7 @@ body {
       }
     }
 
-    /*.register-margin {
-      border: 1px solid red;
-    }*/
-
     .sign-up {
-      /*border: 1px solid purple;*/
       width: 250px;
     }
 
@@ -420,6 +393,7 @@ body {
     }
   }
 
+
   footer {
      background-color: #000;
      width: 100vw;
@@ -431,13 +405,11 @@ body {
    
 
     .top-footer-container {
-      /*border: 1px solid red;*/
       height: 8vh;
     }
 
     @include tablet {
       .top-footer-container {
-        /*border: 1px solid red;*/
         height: 15vh;
         position: relative;
       }
@@ -446,7 +418,6 @@ body {
     .top-footer {
       color: $colorWhite;
       font-size: 8.5px;
-      /*border: 1px solid purple;*/
       width: $width-95;
       height: 3vh;
       border-top: 0.1px solid rgb(83, 79, 79);
@@ -458,6 +429,12 @@ body {
         font-size: 11px;
         height: 4vh;
         
+      }
+    }
+
+    @include desktop-sm {
+      .top-footer {
+        width: 90%;
       }
     }
 
@@ -478,28 +455,112 @@ body {
       }
     }
 
+    @include desktop-sm {
+      .footer-top-icon {
+       
+        width: 60px;
+        height: 55px;
+        
+        left: 47.4%;
+        bottom: 32px;
+      }
+    }
+
+    @include desktop {
+      .footer-top-icon {
+       
+        width: 60px;
+        height: 55px;
+        
+        left: 47.4%;
+        bottom: 32px;
+      }
+    }
+
     ul {
       list-style-type: none;
     }
 
     .footer-bottom-wrapper {
-      /*border: 1px solid white;*/
       height: 6vh;
-      background-color: #0C0C0C;
+      background-color: #1F1F1F;
     }
 
     .footer-bottom-icons {
-      /*border: 1px solid hotpink;*/
       font-size: 11px;
       width: 130px;
       color: $colorWhite;
     }
 
     .power-container {
-      /*border: 1px solid red;*/
       font-size: 13px;
       width: 160px;
       color: $colorWhite;
+    }
+
+    @include desktop-sm {
+      .footer-middle-container {
+        display: $flex; 
+       
+      }
+
+      .eric {
+        background-color: #000;
+        width: 15vw;
+        border: 1px solid rgb(83, 79, 79);
+      }
+      .send {
+        width: 7vw;
+        text-align: $textCenter;
+        background-color:  rgb(71, 68, 68);
+        border: 1px solid rgb(71, 68, 68);
+        
+      }
+
+      ::placeholder {
+        font-size: 14px;
+        color: $colorWhite;
+      }
+      
+      .footer-top-middle,
+      .footer-center-middle,
+      .footer-center-bottom {
+        text-align: $textCenter;
+        width: 30vw;
+      }
+
+      .footer-top-middle p,
+      .footer-center-middle p,
+      .footer-center-bottom p,
+      .about {
+        color: $colorWhite;
+        font-size: 13px;
+      }
+
+      .possibility {
+        font-size: 13px;
+      }
+
+      .footer-center-middle-nested span {
+        font-size: 11px;
+        color: $colorWhite;
+      }
+
+      #info-eric,
+      .possibility {
+        color: $primaryColor;
+        font-size: 13px;
+      }
+    }
+
+  
+
+    @include desktop-sm {
+      .footer-bottom-wrapper {
+        display: $flex;
+        width: 100%;
+        
+      }
     }
   }
   
