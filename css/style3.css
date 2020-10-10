@@ -309,20 +309,36 @@ main .fill-in-credentials {
   border: 1px solid #DEE2E3;
 }
 
+@media (min-width: 768px) {
+  main .fill-in-credentials {
+    width: 330px;
+  }
+}
+
 main .register-form-container {
   /*border: 1px solid black;*/
   width: 90%;
 }
 
 main .name {
-  /*border: 1px solid red;*/
   width: 250px;
-  /*color: $colorblack;*/
+}
+
+@media (min-width: 768px) {
+  main .name {
+    width: 330px;
+  }
 }
 
 main .sign-up {
   /*border: 1px solid purple;*/
   width: 250px;
+}
+
+@media (min-width: 768px) {
+  main .sign-up {
+    width: 330px;
+  }
 }
 
 main .sign-up button {

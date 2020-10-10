@@ -357,15 +357,26 @@ body {
       border: 1px solid #DEE2E3;
     }
 
+    @include tablet {
+      .fill-in-credentials {
+        width: 330px;  
+      }
+    }
+
     .register-form-container {
       /*border: 1px solid black;*/
       width: 90%;
     }
 
     .name {
-      /*border: 1px solid red;*/
       width: 250px;
-      /*color: $colorblack;*/
+      
+    }
+
+    @include tablet {
+      .name {
+        width: 330px;
+      }
     }
 
     /*.register-margin {
@@ -375,6 +386,12 @@ body {
     .sign-up {
       /*border: 1px solid purple;*/
       width: 250px;
+    }
+
+    @include tablet {
+      .sign-up {
+        width: 330px;
+      }
     }
 
     .sign-up button {
