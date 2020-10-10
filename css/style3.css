@@ -127,6 +127,9 @@ main {
         
       }
     }*/
+  /*.register-margin {
+      border: 1px solid red;
+    }*/
 }
 
 @media (min-width: 1024px) {
@@ -272,7 +275,7 @@ main .google-img {
 main .click-details {
   /*border: 1px solid purple;*/
   height: 8vh;
-  min-width: 40%;
+  width: 100%;
   background-color: #F5F5F5;
 }
 
@@ -296,5 +299,35 @@ main .map-directions-container {
   main .map-directions-container {
     height: 550px;
   }
+}
+
+main .fill-in-credentials {
+  /*border: 1px solid purple;*/
+  width: 250px;
+  height: 50px;
+  background-color: #DEE2E3;
+  border: 1px solid #DEE2E3;
+}
+
+main .register-form-container {
+  /*border: 1px solid black;*/
+  width: 90%;
+}
+
+main .name {
+  /*border: 1px solid red;*/
+  width: 250px;
+  /*color: $colorblack;*/
+}
+
+main .sign-up {
+  /*border: 1px solid purple;*/
+  width: 250px;
+}
+
+main .sign-up button {
+  color: #fff;
+  background-color: #d35649;
+  border: 1px solid #d35649;
 }
 /*# sourceMappingURL=style3.css.map */

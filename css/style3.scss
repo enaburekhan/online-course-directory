@@ -321,7 +321,7 @@ body {
     .click-details {
       /*border: 1px solid purple;*/
       height: 8vh;
-      min-width: 40%;
+      width: 100%;
       background-color: #F5F5F5;
     }
 
@@ -345,9 +345,41 @@ body {
 
     @include desktop {
       .map-directions-container {
-        
          height: 550px;
-   
        }
+    }
+
+    .fill-in-credentials {
+      /*border: 1px solid purple;*/
+      width: 250px;
+      height: 50px;
+      background-color: #DEE2E3;
+      border: 1px solid #DEE2E3;
+    }
+
+    .register-form-container {
+      /*border: 1px solid black;*/
+      width: 90%;
+    }
+
+    .name {
+      /*border: 1px solid red;*/
+      width: 250px;
+      /*color: $colorblack;*/
+    }
+
+    /*.register-margin {
+      border: 1px solid red;
+    }*/
+
+    .sign-up {
+      /*border: 1px solid purple;*/
+      width: 250px;
+    }
+
+    .sign-up button {
+      color: $colorWhite;
+      background-color: $primaryColor;
+      border: 1px solid $primaryColor;
     }
   }
