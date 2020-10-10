@@ -116,10 +116,9 @@ header .bottom-nav-mobile a {
 
 main {
   margin-top: 90px;
-}
-
-main .scala-logo img {
-  /*border: 1px solid purple;*/
+  /*.scala-wrapper {
+      border: 1px solid purple;
+    }*/
 }
 
 main h1 {
@@ -127,8 +126,36 @@ main h1 {
   color: #d35649;
 }
 
+main .scala-title {
+  /*border: 1px solid red;*/
+  width: 300px;
+}
+
+@media (min-width: 768px) {
+  main .scala-title {
+    border: 1px solid red;
+    width: 550px;
+  }
+}
+
 main .scala-table-large {
   display: none;
+}
+
+@media (min-width: 768px) {
+  main .scala-table-large {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  main .scala-table-small {
+    display: none;
+  }
+}
+
+main .scala-apply {
+  /*border: 1px solid red;*/
+  width: 310px;
 }
 
 main .scala-apply .fas,

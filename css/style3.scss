@@ -156,20 +156,45 @@ body {
   main {
     margin-top: 90px;
 
-    .scala-logo img {
-      /*border: 1px solid purple;*/
-    }
+    /*.scala-wrapper {
+      border: 1px solid purple;
+    }*/
     
     h1 {
       /*font-size: 35px;*/
-      color: $primaryColor; 
+      color: $primaryColor;   
+    }
+
+    .scala-title {
+        /*border: 1px solid red;*/
+        width: 300px;
+    }
+    
+    @include tablet {
+      .scala-title {
+        border: 1px solid red;
+        width: 550px;
+    }
     }
 
     .scala-table-large {
       display: $none;
     }
 
+    @include tablet {
+      .scala-table-large {
+        display: $flex;
+      }
 
+      .scala-table-small {
+        display: $none;
+      }
+    }
+
+    .scala-apply {
+      /*border: 1px solid red;*/
+      width: 310px;
+    }
     .scala-apply .fas,
     .scala-apply button {
       /*border: 1px solid red;*/
