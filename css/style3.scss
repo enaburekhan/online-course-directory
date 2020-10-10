@@ -416,5 +416,90 @@ body {
       color: $colorWhite;
       background-color: $primaryColor;
       border: 1px solid $primaryColor;
+      font-weight: $font-weight-700;
     }
   }
+
+  footer {
+     background-color: #000;
+     width: 100vw;
+    .footer-middle-container,
+    .footer-top-icon {
+      display: $none;
+    }
+
+   
+
+    .top-footer-container {
+      /*border: 1px solid red;*/
+      height: 8vh;
+    }
+
+    @include tablet {
+      .top-footer-container {
+        /*border: 1px solid red;*/
+        height: 15vh;
+        position: relative;
+      }
+    }
+
+    .top-footer {
+      color: $colorWhite;
+      font-size: 8.5px;
+      /*border: 1px solid purple;*/
+      width: $width-95;
+      height: 3vh;
+      border-top: 0.1px solid rgb(83, 79, 79);
+      border-bottom: 0.1px solid rgb(83, 79, 79);
+    }
+
+    @include tablet {
+      .top-footer {
+        font-size: 11px;
+        height: 4vh;
+        
+      }
+    }
+
+    @include tablet {
+      .footer-top-icon {
+        display: $flex;
+        justify-content: $jcenter;
+        align-items: $jcenter;
+        position: absolute;
+        color: $colorWhite;
+        background-color: #000;
+        width: 45px;
+        height: 45px;
+        border-radius: $border-radius;
+        border: 1px solid  rgb(83, 79, 79);
+        left: 47.4%;
+        bottom: 36px;
+      }
+    }
+
+    ul {
+      list-style-type: none;
+    }
+
+    .footer-bottom-wrapper {
+      /*border: 1px solid white;*/
+      height: 6vh;
+      background-color: #0C0C0C;
+    }
+
+    .footer-bottom-icons {
+      /*border: 1px solid hotpink;*/
+      font-size: 11px;
+      width: 130px;
+      color: $colorWhite;
+    }
+
+    .power-container {
+      /*border: 1px solid red;*/
+      font-size: 13px;
+      width: 160px;
+      color: $colorWhite;
+    }
+  }
+  

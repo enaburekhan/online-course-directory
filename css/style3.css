@@ -363,5 +363,93 @@ main .sign-up button {
   color: #fff;
   background-color: #d35649;
   border: 1px solid #d35649;
+  font-weight: 700;
+}
+
+footer {
+  background-color: #000;
+  width: 100vw;
+}
+
+footer .footer-middle-container,
+footer .footer-top-icon {
+  display: none;
+}
+
+footer .top-footer-container {
+  /*border: 1px solid red;*/
+  height: 8vh;
+}
+
+@media (min-width: 768px) {
+  footer .top-footer-container {
+    /*border: 1px solid red;*/
+    height: 15vh;
+    position: relative;
+  }
+}
+
+footer .top-footer {
+  color: #fff;
+  font-size: 8.5px;
+  /*border: 1px solid purple;*/
+  width: 95%;
+  height: 3vh;
+  border-top: 0.1px solid #534f4f;
+  border-bottom: 0.1px solid #534f4f;
+}
+
+@media (min-width: 768px) {
+  footer .top-footer {
+    font-size: 11px;
+    height: 4vh;
+  }
+}
+
+@media (min-width: 768px) {
+  footer .footer-top-icon {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: absolute;
+    color: #fff;
+    background-color: #000;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    border: 1px solid #534f4f;
+    left: 47.4%;
+    bottom: 36px;
+  }
+}
+
+footer ul {
+  list-style-type: none;
+}
+
+footer .footer-bottom-wrapper {
+  /*border: 1px solid white;*/
+  height: 6vh;
+  background-color: #0C0C0C;
+}
+
+footer .footer-bottom-icons {
+  /*border: 1px solid hotpink;*/
+  font-size: 11px;
+  width: 130px;
+  color: #fff;
+}
+
+footer .power-container {
+  /*border: 1px solid red;*/
+  font-size: 13px;
+  width: 160px;
+  color: #fff;
 }
 /*# sourceMappingURL=style3.css.map */
