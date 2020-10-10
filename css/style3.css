@@ -114,7 +114,39 @@ header .bottom-nav-mobile a {
   color: #fff;
 }
 
+main {
+  margin-top: 90px;
+}
+
+main .scala-logo img {
+  /*border: 1px solid purple;*/
+}
+
+main h1 {
+  /*font-size: 35px;*/
+  color: #d35649;
+}
+
 main .scala-table-large {
   display: none;
+}
+
+main .scala-apply .fas,
+main .scala-apply button {
+  /*border: 1px solid red;*/
+  width: 25px;
+  height: 30px;
+  background-color: #509AD7;
+  color: #fff;
+}
+
+main .scala-apply button {
+  width: 50px;
+  border: 1px solid #509AD7;
+}
+
+main .feedback-icons {
+  font-size: 12px;
+  width: 100%;
 }
 /*# sourceMappingURL=style3.css.map */

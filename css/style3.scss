@@ -154,7 +154,38 @@ body {
   }
 
   main {
+    margin-top: 90px;
+
+    .scala-logo img {
+      /*border: 1px solid purple;*/
+    }
+    
+    h1 {
+      /*font-size: 35px;*/
+      color: $primaryColor; 
+    }
+
     .scala-table-large {
       display: $none;
+    }
+
+
+    .scala-apply .fas,
+    .scala-apply button {
+      /*border: 1px solid red;*/
+      width: 25px;
+      height: 30px;
+      background-color: #509AD7;
+      color: $colorWhite;
+    }
+
+    .scala-apply button {
+      width: 50px;
+      border: 1px solid #509AD7;
+    }
+
+    .feedback-icons {
+      font-size: 12px;
+      width: 100%;
     }
   }
