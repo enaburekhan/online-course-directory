@@ -118,6 +118,14 @@ main {
   margin-top: 90px;
   /*.scala-wrapper {
       border: 1px solid purple;
+      width: 100vw;
+    }*/
+  /* @include mobile {
+      .scala-text {
+        border: 1px solid hotpink;
+        width: 95%;
+        
+      }
     }*/
 }
 
@@ -133,7 +141,7 @@ main .scala-title {
 
 @media (min-width: 768px) {
   main .scala-title {
-    border: 1px solid red;
+    /*border: 1px solid red;*/
     width: 550px;
   }
 }
@@ -158,6 +166,13 @@ main .scala-apply {
   width: 310px;
 }
 
+@media (min-width: 768px) {
+  main .scala-apply {
+    /*border: 1px solid purple;*/
+    width: 530px;
+  }
+}
+
 main .scala-apply .fas,
 main .scala-apply button {
   /*border: 1px solid red;*/
@@ -172,8 +187,83 @@ main .scala-apply button {
   border: 1px solid #509AD7;
 }
 
-main .feedback-icons {
+@media (min-width: 768px) {
+  main .feedback-icon-wrapper {
+    /*border: 1px solid purple;*/
+    width: 550px;
+  }
+}
+
+main .feedback-icons,
+main .students-wrapper {
   font-size: 12px;
+}
+
+main .feedback-icons {
+  /*border: 1px solid hotpink;*/
+  width: 70%;
+}
+
+@media (min-width: 768px) {
+  main .feedback-icons {
+    /*border: 1px solid hotpink;*/
+    width: 50%;
+  }
+}
+
+main .students-wrapper {
+  /*border: 1px solid red;*/
   width: 100%;
+}
+
+@media (min-width: 768px) {
+  main .students-wrapper {
+    /*border: 1px solid red;*/
+    width: 70%;
+  }
+}
+
+main .students {
+  font-size: 9px;
+}
+
+main .enrolled {
+  font-size: 9px;
+}
+
+main .students-wrapper .fas {
+  font-size: 10px;
+}
+
+main .map-direction-wrapper {
+  /*border: 1px solid black;*/
+  width: 100vw;
+}
+
+main .scala-text {
+  /*border: 1px solid hotpink;*/
+  width: 100%;
+}
+
+main .google-img {
+  width: 100%;
+  height: 200px;
+}
+
+main .click-details {
+  /*border: 1px solid purple;*/
+  height: 8vh;
+  min-width: 40%;
+  background-color: #F5F5F5;
+}
+
+main .map-directons {
+  color: #d35649;
+}
+
+main .map-directions-container {
+  /* border: 1px solid black;*/
+  height: 350px;
+  min-width: 80%;
 }
 /*# sourceMappingURL=style3.css.map */

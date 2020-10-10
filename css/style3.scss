@@ -6,11 +6,11 @@
   box-sizing: border-box;
 }
 
+
 html,
 body {
   font-family: "acumin-pro", "Acumin Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
-
 
 @mixin flexCenter {
     display: flex;
@@ -22,6 +22,14 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
+  }
+
+  $mobile: 650px;
+  
+  @mixin mobile {
+    @media (min-width: #{$mobile}) {
+      @content;
+    }
   }
   
   
@@ -158,6 +166,7 @@ body {
 
     /*.scala-wrapper {
       border: 1px solid purple;
+      width: 100vw;
     }*/
     
     h1 {
@@ -172,7 +181,7 @@ body {
     
     @include tablet {
       .scala-title {
-        border: 1px solid red;
+        /*border: 1px solid red;*/
         width: 550px;
     }
     }
@@ -195,6 +204,13 @@ body {
       /*border: 1px solid red;*/
       width: 310px;
     }
+
+    @include tablet {
+      .scala-apply {
+        /*border: 1px solid purple;*/
+        width: 530px;
+      }
+    }
     .scala-apply .fas,
     .scala-apply button {
       /*border: 1px solid red;*/
@@ -209,8 +225,95 @@ body {
       border: 1px solid #509AD7;
     }
 
-    .feedback-icons {
+    @include tablet {
+      .feedback-icon-wrapper {
+        /*border: 1px solid purple;*/
+        width: 550px;
+        
+      }
+    }
+
+    .feedback-icons,
+    .students-wrapper {
       font-size: 12px;
+      
+    }
+
+    .feedback-icons {
+      /*border: 1px solid hotpink;*/
+      width: 70%;
+    }
+
+    @include tablet {
+      .feedback-icons {
+        /*border: 1px solid hotpink;*/
+        width: 50%;
+      }
+    }
+
+    .students-wrapper {
+      /*border: 1px solid red;*/
       width: 100%;
+    }
+
+    @include tablet {
+      .students-wrapper {
+        /*border: 1px solid red;*/
+        width: 70%;
+      }
+    }
+
+    .students {
+      font-size: 9px;
+    }
+
+    .enrolled {
+      font-size: 9px;
+    }
+
+    .students-wrapper .fas {
+      font-size: 10px;
+    }
+
+    .map-direction-wrapper {
+      /*border: 1px solid black;*/
+      width: 100vw;
+    }
+
+    .scala-text {
+      /*border: 1px solid hotpink;*/
+      width: 100%;
+      
+    }
+
+   /* @include mobile {
+      .scala-text {
+        border: 1px solid hotpink;
+        width: 95%;
+        
+      }
+    }*/
+
+    .google-img {
+      width: 100%;
+      height: 200px;
+    }
+
+    .click-details {
+      /*border: 1px solid purple;*/
+      height: 8vh;
+      min-width: 40%;
+      background-color: #F5F5F5;
+    }
+
+    .map-directons {
+      color: $primaryColor;
+    }
+
+    .map-directions-container {
+     /* border: 1px solid black;*/
+      height: 350px;
+      min-width: 80%;
+
     }
   }
