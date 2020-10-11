@@ -32,6 +32,14 @@ body {
       @content;
     }
   }
+
+  $desktop-sm: 992px;
+  
+  @mixin desktop-sm {
+    @media (min-width: #{$desktop-sm}) {
+      @content;
+    }
+  }
   
   $desktop: 1024px;
   
@@ -381,6 +389,15 @@ body {
       background-color: #000;
     }
 
+    @include tablet {
+      
+       .top-footer-container {
+         height: 18vh;
+         position: relative;
+         
+       }
+    }
+
     .top-footer {
       font-size: 7px;
       font-weight: $font-weight;
@@ -392,6 +409,13 @@ body {
 
     }
 
+    @include tablet {
+      .top-footer {
+        font-size: 10px;  
+        height: 5vh;
+      }
+    }
+
     ul {
       list-style-type: none;
     }
@@ -401,41 +425,48 @@ body {
     }
 
     @include tablet {
-      .top-footer {
-        font-size: 9px;
-        height: 3vh;
-
-      }
-
-      .top-footer-container {
-        position: relative;
-      }
-
       .footer-top-icon {
-         display: flex;
-         align-items: $alignCenter;
-         justify-content: $jcenter;
-         left: 47%;  
-         bottom: 20px;
-         position: absolute;
-         width: 50px;
-         height: 45px;
-         border-radius: $border-radius;
-         border: 1px solid rgb(83, 79, 79);
-         background-color: $colorblack;
-         text-align: $textCenter;
-         color: $colorWhite;
+        display: flex;
+        align-items: $alignCenter;
+        justify-content: $jcenter;
+        left: 47%;  
+        bottom: 47px;
+        position: absolute;
+        width: 50px;
+        height: 45px;
+        border-radius: $border-radius;
+        border: 1px solid rgb(83, 79, 79);
+        background-color: $colorblack;
+        text-align: $textCenter;
+        color: $colorWhite;
 
-      }
+     }
     }
 
-    @include desktop {
+    @include desktop-sm {
+      .footer-top-icon {
+        top: 25px;
+       
+     }
+    }
+
+    @include desktop-sm {
+      .top-footer {
+        font-size: 9px;
+        height: 4vh;
+
+      }
+
+      
+    }
+
+    @include desktop-sm {
       .top-footer {
         font-size: 10px;
       }
     }
 
-    @include desktop {
+    @include desktop-sm {
       .footer-top-icon {
         width: 60px;
         height: 55px;
@@ -448,7 +479,7 @@ body {
     }
 
 
-    @include tablet {
+    @include desktop-sm {
       .footer-middle-container {
         display: block;
         background-color: #000;
@@ -498,17 +529,18 @@ body {
     }
 
     .footer-bottom-wrapper {
-      background-color: #0C0C0C;
+      background-color: #1F1F1F;
       color: $colorWhite;
       height: 6vh;
+      display: $flex;
       
     }
 
-    @include tablet {
+    @include desktop-sm {
       .footer-bottom-wrapper {
-        height: 10vh;
-        
-        
+        display: $flex;
+        justify-content: flex-center;
+        height: 10vh;  
       }
     }
 
@@ -517,20 +549,29 @@ body {
       width: 40vw;
     }
 
-    @include tablet {
+    @include desktop-sm {
       .footer-bottom-icons {
         width: 20vw;
+
       }
     }
 
     .power-container {
       font-size: 9px;
       font-weight: $font-weight-700;
+      width: 40vw;
     }
 
     @include tablet {
       .power-container {
         font-size: 11px;
+      }
+    }
+
+    @include desktop-sm {
+      .power-container {
+        display: $flex;
+        justify-content: flex-end;
       }
     }
 

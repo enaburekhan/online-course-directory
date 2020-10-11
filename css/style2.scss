@@ -32,6 +32,14 @@ body {
       @content;
     }
   }
+
+  $desktop-sm: 992px;
+  
+  @mixin desktop-sm {
+    @media (min-width: #{$desktop-sm}) {
+      @content;
+    }
+  }
   
   $desktop: 1024px;
   
@@ -244,6 +252,13 @@ body {
      background-color: #000;
    }
 
+   @include tablet {
+    .top-footer-container {
+      height: 23vh;
+      position: relative;
+    }
+   }
+
    .top-footer {
      font-size: 7px;
      font-weight: $font-weight;
@@ -255,6 +270,13 @@ body {
 
    }
 
+   @include tablet {
+    .top-footer {
+      font-size: 9px;
+      height: 5vh;
+    }
+   }
+
    ul {
      list-style-type: none;
    }
@@ -264,35 +286,38 @@ body {
    }
 
    @include tablet {
+    .footer-top-icon {
+      display: flex;
+      align-items: $alignCenter;
+      justify-content: $jcenter;
+      left: 47%;  
+      bottom: 65px;
+      position: absolute;
+      width: 50px;
+      height: 45px;
+      border-radius: $border-radius;
+      border: 1px solid rgb(83, 79, 79);
+      background-color: $colorblack;
+      text-align: $textCenter;
+      color: $colorWhite;
+
+   }
+   }
+
+   @include desktop-sm {
      .top-footer {
        font-size: 9px;
-       height: 3vh;
+       height: 4vh;
 
-     }
-
-     .top-footer-container {
-       position: relative;
      }
 
      .footer-top-icon {
-        display: flex;
-        align-items: $alignCenter;
-        justify-content: $jcenter;
-        left: 47%;  
-        bottom: 20px;
-        position: absolute;
-        width: 50px;
-        height: 45px;
-        border-radius: $border-radius;
-        border: 1px solid rgb(83, 79, 79);
-        background-color: $colorblack;
-        text-align: $textCenter;
-        color: $colorWhite;
-
+        top: 47px;
+        left: 47.5%;  
      }
    }
 
-   @include desktop {
+   @include desktop-sm {
      .top-footer {
        font-size: 10px;
      }
@@ -303,7 +328,7 @@ body {
        width: 60px;
        height: 55px;
        left: 47%;
-       bottom: 17px;
+       bottom: 10px;
      }
    }
    .footer-middle-container {
@@ -311,7 +336,7 @@ body {
    }
 
 
-   @include tablet {
+   @include desktop-sm {
      .footer-middle-container {
        display: block;
        background-color: #000;
@@ -364,10 +389,13 @@ body {
      background-color: #0C0C0C;
      color: $colorWhite;
      height: 6vh;
+     display: $flex;
+     justify-content: $between;
+     align-items: $alignCenter;
      
    }
 
-   @include tablet {
+   @include desktop-sm {
      .footer-bottom-wrapper {
        height: 10vh;
        
@@ -380,7 +408,7 @@ body {
      width: 40vw;
    }
 
-   @include tablet {
+   @include desktop-sm {
      .footer-bottom-icons {
        width: 20vw;
      }
@@ -389,9 +417,10 @@ body {
    .power-container {
      font-size: 9px;
      font-weight: $font-weight-700;
+     width: 40vw;
    }
 
-   @include tablet {
+   @include desktop-sm {
      .power-container {
        font-size: 11px;
      }
