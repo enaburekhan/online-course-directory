@@ -1,18 +1,18 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Directory of online coding courses
+# Online course directory
 
 > This HTML/CSS capstone project involve building an online course platform called echantill-edu.It consist of three pages; the main page that shows how the platform works, the result page that shows the list of courses and the course detail page where you can register and take the course. This project was built using HTML 5, BOOTSTRAP and SCSS. 
 
 
 
-![onlineCodingDirectory-screen-shot](https://user-images.githubusercontent.com/51296741/95395562-d6950700-08f6-11eb-863c-d14924165039.png)
+![onlineCodingDirectory-screen-shot](https://user-images.githubusercontent.com/51296741/95672277-6953d100-0b97-11eb-9edc-fa3943dc61c5.png)
 
 
 ## Built With
 
 - Scss
-- Html
+- Html5
 - Bootstrap
 - Flex-box
 
@@ -21,7 +21,7 @@
 ## Live Demo
 
 
-[Live Demo Link](https://raw.githack.com/enaburekhan/Directory-of-online-coding-language-courses-/feature-onlineCoding/html/index.html)
+[Live Demo Link](https://raw.githack.com/enaburekhan/online-course-directory/feature-coding/html/index.html)
 
 [Live Video Link](https://www.loom.com/share/6be0243ac6ff4c5eb1c17ddec4a729e9)
 
