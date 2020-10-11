@@ -2,7 +2,7 @@
 
 # Online course directory
 
-> This HTML/CSS capstone project involve building an online course platform called echantill-edu.It consist of three pages; the main page that shows how the platform works, the result page that shows the list of courses and the course detail page where you can register and take the course. This project was built using HTML 5, BOOTSTRAP and SCSS. 
+> This HTML/CSS capstone project involve building an online course platform called echantill-edu.It consist of three pages; the main page that shows how the platform works, the result page that shows the list of courses and the course detail page where you can register and take courses. This project was built using HTML 5, BOOTSTRAP and SCSS. 
 
 
 
@@ -23,7 +23,7 @@
 
 [Live Demo Link](https://raw.githack.com/enaburekhan/online-course-directory/feature-coding/html/index.html)
 
-[Live Video Link](https://www.loom.com/share/6be0243ac6ff4c5eb1c17ddec4a729e9)
+[Live Video Link](https://www.loom.com/share/a84c4dd0bdea40ebbb1366d8d1c73a8c)
 
 
 ## Getting Started
