@@ -166,7 +166,7 @@ main .search-container {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #C1C1C8;
+  background-color: #c1c1c8;
   width: 45vw;
   border-radius: 3px;
   margin-bottom: 1px;
@@ -180,7 +180,7 @@ main .search-container {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    background-color: #C1C1C8;
+    background-color: #c1c1c8;
     margin-bottom: 10px;
   }
   main .form-search-container {
@@ -278,7 +278,7 @@ main .key-word {
 
 main .how-it-works {
   font-size: 12px;
-  background-color: #C1C1C8;
+  background-color: #c1c1c8;
   color: #111;
 }
 
@@ -311,7 +311,7 @@ main h1 {
 
 main .take-course-container,
 main .take-course-container-2 {
-  background-color: #E27F65;
+  background-color: #e27f65;
   color: #fff;
 }
 
@@ -350,7 +350,7 @@ main .laptop {
 
 main .find-a-course,
 main .free-sign-up {
-  background-color: #FAFDFF;
+  background-color: #fafdff;
   color: #d35649;
   width: 100px;
   height: 3vh;
@@ -369,7 +369,7 @@ main .free-sign-up {
 }
 
 main .take-course-container-2 {
-  background-color: #98A4A5;
+  background-color: #98a4a5;
 }
 
 main .free-sign-up {
@@ -378,7 +378,7 @@ main .free-sign-up {
 }
 
 main .take-course-container-3 {
-  background-color: #509BD7;
+  background-color: #509bd7;
   color: #fff;
 }
 
@@ -544,7 +544,7 @@ footer .footer-middle-container {
 }
 
 footer .footer-bottom-wrapper {
-  background-color: #1F1F1F;
+  background-color: #1f1f1f;
   color: #fff;
   height: 6vh;
   display: -webkit-box;
@@ -557,9 +557,9 @@ footer .footer-bottom-wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: flex-center;
-        -ms-flex-pack: flex-center;
-            justify-content: flex-center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     height: 10vh;
   }
 }
