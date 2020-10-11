@@ -190,8 +190,8 @@ main {
   @include tablet {
     .clear-filter .far {
       width: 25px;
-      height: 30px;
-      padding: 5px 0 3px 0;
+      height: 31px;
+      padding: 6px 0 4px 0;
       text-align: $textCenter;
       margin-right: -5px;
       color: $colorWhite;
@@ -210,7 +210,8 @@ main {
       border-bottom-right-radius: 2px;
       color: $colorWhite;
       width: 80px;
-      height: 30px;
+      height: 32px;
+      text-align: $textCenter;
     }
   }
 
