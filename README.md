@@ -1,76 +1,48 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name
+# Online course directory
 
-> One paragraph statement about the project.
+> This HTML/CSS capstone project involve building an online course platform called echantill-edu.It consist of three pages; the main page that shows how the platform works, the result page that shows the list of courses and the course detail page where you can register and take courses. This project was built using HTML 5, BOOTSTRAP and SCSS. 
 
-![screenshot](./app_screenshot.png)
 
-Additional description about the project and its features.
+
+![onlineCodingDirectory-screen-shot](https://user-images.githubusercontent.com/51296741/95672277-6953d100-0b97-11eb-9edc-fa3943dc61c5.png)
+
 
 ## Built With
 
-- Major languages
-- Frameworks
-- Technologies used
+- Scss
+- Html5
+- Bootstrap
+- Flex-box
+
+
 
 ## Live Demo
 
-[Live Demo Link](https://livedemo.com)
+
+[Live Demo Link](https://raw.githack.com/enaburekhan/online-course-directory/feature-coding/html/index.html)
+
+[Live Video Link](https://www.loom.com/share/a84c4dd0bdea40ebbb1366d8d1c73a8c)
 
 
 ## Getting Started
 
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
+This project involves using your initiative to create real life website and making it responsive. 
 
+## Author
 
-To get a local copy up and running follow these simple example steps.
+👤 **Eric Enaburekhan**
 
-### Prerequisites
-
-### Setup
-
-### Install
-
-### Usage
-
-### Run tests
-
-### Deployment
-
-
-
-## Authors
-
-👤 **Author1**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/linkedinhandle)
-
-👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/linkedinhandle)
-
-## 🤝 Contributing
-
-Contributions, issues, and feature requests are welcome!
-
-Feel free to check the [issues page](issues/).
+- Github: [@enaburekhan](https://github.com/enaburekhan)
+- Twitter: [@enaburekhaneric](https://twitter.com/enaburekhaneric)
+- Linkedin: [@ericenaburekhan](https://www.linkedin.com/in/eric-enaburekhan-801a28100/)
 
 ## Show your support
 
-Give a ⭐️ if you like this project!
+If you've read this far, you must like the project! Give me a ⭐️!
 
 ## Acknowledgments
 
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
-
-## 📝 License
-
-This project is [MIT](lic.url) licensed.
+-Many thanks to Mathew Njuguna and others on Behance for the design idea https://www.behance.net/mathewnjuguna.
+- My thanks also goes to Microverse and all our peers and colleagues there.

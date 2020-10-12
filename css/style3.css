@@ -1,0 +1,510 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: "acumin-pro", "Acumin Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+header nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  height: 12vh;
+  background-color: #d35649;
+  z-index: 7;
+}
+
+header .bottom-nav-large {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  header nav {
+    border: 1px solid black;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+@media (min-width: 1024px) {
+  header nav .bottom-nav-mobile {
+    display: none;
+  }
+  header nav .bottom-nav-large {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 45vw;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    font-size: 13px;
+    font-weight: 700;
+  }
+  header nav .bottom-nav-large a {
+    color: #fff;
+  }
+}
+
+header .top-nav a {
+  color: #fff;
+  font-weight: 700;
+  font-size: 25px;
+}
+
+@media (min-width: 1024px) {
+  header .top-nav {
+    width: 32vw;
+  }
+}
+
+header .bottom-nav-mobile {
+  width: 60vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (min-width: 768px) {
+  header .bottom-nav-mobile {
+    width: 40vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  header .bottom-nav-large {
+    display: none;
+  }
+}
+
+header .bottom-nav-mobile a {
+  color: #fff;
+}
+
+main {
+  margin-top: 90px;
+}
+
+@media (min-width: 1024px) {
+  main main {
+    margin-top: 150px;
+  }
+}
+
+main h1 {
+  color: #d35649;
+}
+
+main .scala-title {
+  width: 300px;
+}
+
+@media (min-width: 768px) {
+  main .scala-title {
+    width: 550px;
+  }
+}
+
+main .scala-table-large {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  main .scala-table-large {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  main .scala-table-small {
+    display: none;
+  }
+}
+
+main .scala-apply {
+  width: 310px;
+}
+
+@media (min-width: 768px) {
+  main .scala-apply {
+    width: 530px;
+  }
+}
+
+main .scala-apply .fas,
+main .scala-apply button {
+  width: 25px;
+  height: 30px;
+  background-color: #509AD7;
+  color: #fff;
+}
+
+main .scala-apply button {
+  width: 50px;
+  border: 1px solid #509AD7;
+}
+
+@media (min-width: 768px) {
+  main .feedback-icon-wrapper {
+    width: 550px;
+  }
+}
+
+main .feedback-icons,
+main .students-wrapper {
+  font-size: 12px;
+}
+
+main .feedback-icons {
+  width: 70%;
+}
+
+@media (min-width: 768px) {
+  main .feedback-icons {
+    width: 50%;
+  }
+}
+
+main .students-wrapper {
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  main .students-wrapper {
+    width: 70%;
+  }
+}
+
+main .students {
+  font-size: 9px;
+}
+
+main .enrolled {
+  font-size: 9px;
+}
+
+main .students-wrapper .fas {
+  font-size: 10px;
+}
+
+main .map-direction-wrapper {
+  width: 100vw;
+}
+
+main .scala-text {
+  width: 100%;
+}
+
+main .google-img {
+  width: 100%;
+  height: 200px;
+}
+
+@media (min-width: 768px) {
+  main .google-img {
+    height: 300px;
+  }
+}
+
+@media (min-width: 1024px) {
+  main .google-img {
+    width: 100%;
+    height: 400px;
+  }
+}
+
+main .click-details {
+  height: 8vh;
+  width: 100%;
+  background-color: #F5F5F5;
+}
+
+main .map-directons {
+  color: #d35649;
+}
+
+main .map-directions-container {
+  height: 350px;
+  min-width: 80%;
+}
+
+@media (min-width: 768px) {
+  main .map-directions-container {
+    height: 450px;
+  }
+}
+
+@media (min-width: 1024px) {
+  main .map-directions-container {
+    height: 550px;
+  }
+}
+
+main .fill-in-credentials {
+  width: 250px;
+  height: 50px;
+  background-color: #DEE2E3;
+  border: 1px solid #DEE2E3;
+}
+
+@media (min-width: 768px) {
+  main .fill-in-credentials {
+    width: 330px;
+  }
+}
+
+@media (min-width: 1024px) {
+  main .fill-in-credentials {
+    width: 380px;
+  }
+}
+
+main .register-form-container {
+  width: 90%;
+}
+
+main .name {
+  width: 250px;
+}
+
+@media (min-width: 768px) {
+  main .name {
+    width: 330px;
+  }
+}
+
+@media (min-width: 1024px) {
+  main .name {
+    width: 380px;
+  }
+}
+
+main .sign-up {
+  width: 250px;
+}
+
+@media (min-width: 768px) {
+  main .sign-up {
+    width: 330px;
+  }
+}
+
+@media (min-width: 1024px) {
+  main .sign-up {
+    width: 380px;
+  }
+}
+
+main .sign-up button {
+  color: #fff;
+  background-color: #d35649;
+  border: 1px solid #d35649;
+  font-weight: 700;
+}
+
+footer {
+  background-color: #000;
+  width: 100vw;
+}
+
+footer .footer-middle-container,
+footer .footer-top-icon {
+  display: none;
+}
+
+footer .top-footer-container {
+  height: 8vh;
+}
+
+@media (min-width: 768px) {
+  footer .top-footer-container {
+    height: 15vh;
+    position: relative;
+  }
+}
+
+footer .top-footer {
+  color: #fff;
+  font-size: 8.5px;
+  width: 95%;
+  height: 3vh;
+  border-top: 0.1px solid #534f4f;
+  border-bottom: 0.1px solid #534f4f;
+}
+
+@media (min-width: 768px) {
+  footer .top-footer {
+    font-size: 11px;
+    height: 4vh;
+  }
+}
+
+@media (min-width: 992px) {
+  footer .top-footer {
+    width: 90%;
+  }
+}
+
+@media (min-width: 768px) {
+  footer .footer-top-icon {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: absolute;
+    color: #fff;
+    background-color: #000;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    border: 1px solid #534f4f;
+    left: 47.4%;
+    bottom: 36px;
+  }
+}
+
+@media (min-width: 992px) {
+  footer .footer-top-icon {
+    width: 60px;
+    height: 55px;
+    left: 47.4%;
+    bottom: 32px;
+  }
+}
+
+@media (min-width: 1024px) {
+  footer .footer-top-icon {
+    width: 60px;
+    height: 55px;
+    left: 47.4%;
+    bottom: 32px;
+  }
+}
+
+footer ul {
+  list-style-type: none;
+}
+
+footer .footer-bottom-wrapper {
+  height: 6vh;
+  background-color: #1F1F1F;
+}
+
+footer .footer-bottom-icons {
+  font-size: 11px;
+  width: 130px;
+  color: #fff;
+}
+
+footer .power-container {
+  font-size: 13px;
+  width: 160px;
+  color: #fff;
+}
+
+@media (min-width: 992px) {
+  footer .footer-middle-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  footer .eric {
+    background-color: #000;
+    width: 15vw;
+    border: 1px solid #534f4f;
+  }
+  footer .send {
+    width: 7vw;
+    text-align: center;
+    background-color: #474444;
+    border: 1px solid #474444;
+  }
+  footer ::-webkit-input-placeholder {
+    font-size: 14px;
+    color: #fff;
+  }
+  footer :-ms-input-placeholder {
+    font-size: 14px;
+    color: #fff;
+  }
+  footer ::-ms-input-placeholder {
+    font-size: 14px;
+    color: #fff;
+  }
+  footer ::placeholder {
+    font-size: 14px;
+    color: #fff;
+  }
+  footer .footer-top-middle,
+  footer .footer-center-middle,
+  footer .footer-center-bottom {
+    text-align: center;
+    width: 30vw;
+  }
+  footer .footer-top-middle p,
+  footer .footer-center-middle p,
+  footer .footer-center-bottom p,
+  footer .about {
+    color: #fff;
+    font-size: 13px;
+  }
+  footer .possibility {
+    font-size: 13px;
+  }
+  footer .footer-center-middle-nested span {
+    font-size: 11px;
+    color: #fff;
+  }
+  footer #info-eric,
+  footer .possibility {
+    color: #d35649;
+    font-size: 13px;
+  }
+}
+
+@media (min-width: 992px) {
+  footer .footer-bottom-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=style3.css.map */

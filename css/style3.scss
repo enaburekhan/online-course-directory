@@ -1,0 +1,541 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: "acumin-pro", "Acumin Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+@mixin flexCenter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@mixin gridColumn {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+$mobile: 650px;
+
+@mixin mobile {
+  @media (min-width: #{$mobile}) {
+    @content;
+  }
+}
+
+$tablet: 768px;
+
+@mixin tablet {
+  @media (min-width: #{$tablet}) {
+    @content;
+  }
+}
+
+$desktop-sm: 992px;
+
+@mixin desktop-sm {
+  @media (min-width: #{$desktop-sm}) {
+    @content;
+  }
+}
+
+$desktop: 1024px;
+
+@mixin desktop {
+  @media (min-width: #{$desktop}) {
+    @content;
+  }
+}
+
+$primaryColor: #d35649;
+$direction: column;
+$between: space-between;
+$colorWhite: #fff;
+$formColor: #c5c2c2;
+$border: 5px;
+$border-3: 3px;
+$font-weight: 900;
+$textCenter: center;
+$width-95: 95%;
+$flexstart: flex-start;
+$flex: flex;
+$colorblack: #111;
+$colorgray: #7d8486;
+$font-weight-700: 700;
+$padding: 5px;
+$colordkgray: #1f1f1f;
+$border-radius: 50%;
+$colorbrown: #e17e65;
+$alignCenter: center;
+$row: row;
+$jcenter: center;
+$alignEnd: flex-end;
+$nativeBlue: #519bd7;
+$none: none;
+$mainNav: #d2d2d2;
+$darklight: lighten(#111, 60%);
+$topnavgray: #969696;
+
+header {
+  nav {
+    @include flexCenter();
+
+    flex-direction: $direction;
+    justify-content: space-around;
+    height: 12vh;
+    background-color: $primaryColor;
+    z-index: 7;
+  }
+
+  .bottom-nav-large {
+    display: $none;
+  }
+
+  @include tablet {
+    nav {
+      border: 1px solid black;
+      flex-direction: $row;
+    }
+  }
+
+  @include desktop {
+    nav {
+      .bottom-nav-mobile {
+        display: $none;
+      }
+
+      .bottom-nav-large {
+        display: $flex;
+        width: 45vw;
+        justify-content: $between;
+        font-size: 13px;
+        font-weight: $font-weight-700;
+      }
+
+      .bottom-nav-large a {
+        color: $colorWhite;
+      }
+    }
+  }
+
+  .top-nav a {
+    color: $colorWhite;
+    font-weight: $font-weight-700;
+    font-size: 25px;
+  }
+
+  @include desktop {
+    .top-nav {
+      width: 32vw;
+    }
+  }
+
+  .bottom-nav-mobile {
+    width: 60vw;
+
+    @include flexCenter();
+  }
+
+  @include tablet {
+    .bottom-nav-mobile {
+      width: 40vw;
+
+      @include flexCenter();
+    }
+
+    .bottom-nav-large {
+      display: $none;
+    }
+  }
+
+  .bottom-nav-mobile a {
+    color: $colorWhite;
+  }
+}
+
+main {
+  margin-top: 90px;
+
+  @include desktop {
+    main {
+      margin-top: 150px;
+    }
+  }
+
+  h1 {
+    color: $primaryColor;
+  }
+
+  .scala-title {
+    width: 300px;
+  }
+
+  @include tablet {
+    .scala-title {
+      width: 550px;
+    }
+  }
+
+  .scala-table-large {
+    display: $none;
+  }
+
+  @include tablet {
+    .scala-table-large {
+      display: $flex;
+    }
+
+    .scala-table-small {
+      display: $none;
+    }
+  }
+
+  .scala-apply {
+    width: 310px;
+  }
+
+  @include tablet {
+    .scala-apply {
+      width: 530px;
+    }
+  }
+
+  .scala-apply .fas,
+  .scala-apply button {
+    width: 25px;
+    height: 30px;
+    background-color: #509ad7;
+    color: $colorWhite;
+  }
+
+  .scala-apply button {
+    width: 50px;
+    border: 1px solid #509ad7;
+  }
+
+  @include tablet {
+    .feedback-icon-wrapper {
+      width: 550px;
+    }
+  }
+
+  .feedback-icons,
+  .students-wrapper {
+    font-size: 12px;
+  }
+
+  .feedback-icons {
+    width: 70%;
+  }
+
+  @include tablet {
+    .feedback-icons {
+      width: 50%;
+    }
+  }
+
+  .students-wrapper {
+    width: 100%;
+  }
+
+  @include tablet {
+    .students-wrapper {
+      width: 70%;
+    }
+  }
+
+  .students {
+    font-size: 9px;
+  }
+
+  .enrolled {
+    font-size: 9px;
+  }
+
+  .students-wrapper .fas {
+    font-size: 10px;
+  }
+
+  .map-direction-wrapper {
+    width: 100vw;
+  }
+
+  .scala-text {
+    width: 100%;
+  }
+
+  .google-img {
+    width: 100%;
+    height: 200px;
+  }
+
+  @include tablet {
+    .google-img {
+      height: 300px;
+    }
+  }
+
+  @include desktop {
+    .google-img {
+      width: 100%;
+      height: 400px;
+    }
+  }
+
+  .click-details {
+    height: 8vh;
+    width: 100%;
+    background-color: #f5f5f5;
+  }
+
+  .map-directons {
+    color: $primaryColor;
+  }
+
+  .map-directions-container {
+    height: 350px;
+    min-width: 80%;
+  }
+
+  @include tablet {
+    .map-directions-container {
+      height: 450px;
+    }
+  }
+
+  @include desktop {
+    .map-directions-container {
+      height: 550px;
+    }
+  }
+
+  .fill-in-credentials {
+    width: 250px;
+    height: 50px;
+    background-color: #dee2e3;
+    border: 1px solid #dee2e3;
+  }
+
+  @include tablet {
+    .fill-in-credentials {
+      width: 330px;
+    }
+  }
+
+  @include desktop {
+    .fill-in-credentials {
+      width: 380px;
+    }
+  }
+
+  .register-form-container {
+    width: 90%;
+  }
+
+  .name {
+    width: 250px;
+  }
+
+  @include tablet {
+    .name {
+      width: 330px;
+    }
+  }
+
+  @include desktop {
+    .name {
+      width: 380px;
+    }
+  }
+
+  .sign-up {
+    width: 250px;
+  }
+
+  @include tablet {
+    .sign-up {
+      width: 330px;
+    }
+  }
+
+  @include desktop {
+    .sign-up {
+      width: 380px;
+    }
+  }
+
+  .sign-up button {
+    color: $colorWhite;
+    background-color: $primaryColor;
+    border: 1px solid $primaryColor;
+    font-weight: $font-weight-700;
+  }
+}
+
+footer {
+  background-color: #000;
+  width: 100vw;
+
+  .footer-middle-container,
+  .footer-top-icon {
+    display: $none;
+  }
+
+  .top-footer-container {
+    height: 8vh;
+  }
+
+  @include tablet {
+    .top-footer-container {
+      height: 15vh;
+      position: relative;
+    }
+  }
+
+  .top-footer {
+    color: $colorWhite;
+    font-size: 8.5px;
+    width: $width-95;
+    height: 3vh;
+    border-top: 0.1px solid rgb(83, 79, 79);
+    border-bottom: 0.1px solid rgb(83, 79, 79);
+  }
+
+  @include tablet {
+    .top-footer {
+      font-size: 11px;
+      height: 4vh;
+    }
+  }
+
+  @include desktop-sm {
+    .top-footer {
+      width: 90%;
+    }
+  }
+
+  @include tablet {
+    .footer-top-icon {
+      display: $flex;
+      justify-content: $jcenter;
+      align-items: $jcenter;
+      position: absolute;
+      color: $colorWhite;
+      background-color: #000;
+      width: 45px;
+      height: 45px;
+      border-radius: $border-radius;
+      border: 1px solid  rgb(83, 79, 79);
+      left: 47.4%;
+      bottom: 36px;
+    }
+  }
+
+  @include desktop-sm {
+    .footer-top-icon {
+      width: 60px;
+      height: 55px;
+      left: 47.4%;
+      bottom: 32px;
+    }
+  }
+
+  @include desktop {
+    .footer-top-icon {
+      width: 60px;
+      height: 55px;
+      left: 47.4%;
+      bottom: 32px;
+    }
+  }
+
+  ul {
+    list-style-type: none;
+  }
+
+  .footer-bottom-wrapper {
+    height: 6vh;
+    background-color: #1f1f1f;
+  }
+
+  .footer-bottom-icons {
+    font-size: 11px;
+    width: 130px;
+    color: $colorWhite;
+  }
+
+  .power-container {
+    font-size: 13px;
+    width: 160px;
+    color: $colorWhite;
+  }
+
+  @include desktop-sm {
+    .footer-middle-container {
+      display: $flex;
+    }
+
+    .eric {
+      background-color: #000;
+      width: 15vw;
+      border: 1px solid rgb(83, 79, 79);
+    }
+
+    .send {
+      width: 7vw;
+      text-align: $textCenter;
+      background-color: rgb(71, 68, 68);
+      border: 1px solid rgb(71, 68, 68);
+    }
+
+    ::placeholder {
+      font-size: 14px;
+      color: $colorWhite;
+    }
+
+    .footer-top-middle,
+    .footer-center-middle,
+    .footer-center-bottom {
+      text-align: $textCenter;
+      width: 30vw;
+    }
+
+    .footer-top-middle p,
+    .footer-center-middle p,
+    .footer-center-bottom p,
+    .about {
+      color: $colorWhite;
+      font-size: 13px;
+    }
+
+    .possibility {
+      font-size: 13px;
+    }
+
+    .footer-center-middle-nested span {
+      font-size: 11px;
+      color: $colorWhite;
+    }
+
+    #info-eric,
+    .possibility {
+      color: $primaryColor;
+      font-size: 13px;
+    }
+  }
+
+  @include desktop-sm {
+    .footer-bottom-wrapper {
+      display: $flex;
+      width: 100%;
+    }
+  }
+}

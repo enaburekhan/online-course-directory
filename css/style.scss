@@ -1,0 +1,553 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: "acumin-pro", "Acumin Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+@mixin flexCenter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@mixin gridColumn {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+$tablet: 768px;
+
+@mixin tablet {
+  @media (min-width: #{$tablet}) {
+    @content;
+  }
+}
+
+$desktop-sm: 992px;
+
+@mixin desktop-sm {
+  @media (min-width: #{$desktop-sm}) {
+    @content;
+  }
+}
+
+$desktop: 1024px;
+
+@mixin desktop {
+  @media (min-width: #{$desktop}) {
+    @content;
+  }
+}
+
+$primaryColor: #d35649;
+$direction: column;
+$between: space-between;
+$colorWhite: #fff;
+$formColor: #c5c2c2;
+$border: 5px;
+$border-3: 3px;
+$font-weight: 900;
+$textCenter: center;
+$width-95: 95%;
+$flexstart: flex-start;
+$flex: flex;
+$colorblack: #111;
+$colorgray: #7d8486;
+$font-weight-700: 700;
+$padding: 5px;
+$colordkgray: #1f1f1f;
+$border-radius: 50%;
+$colorbrown: #e17e65;
+$alignCenter: center;
+$row: row;
+$jcenter: center;
+$alignEnd: flex-end;
+$nativeBlue: #519bd7;
+$none: none;
+$mainNav: #d2d2d2;
+$darklight: lighten(#111, 60%);
+$topnavgray: #969696;
+
+header {
+  nav {
+    @include flexCenter();
+
+    flex-direction: $direction;
+    justify-content: space-around;
+    height: 12vh;
+    background-color: $primaryColor;
+    z-index: 7;
+  }
+
+  .bottom-nav-large {
+    display: $none;
+  }
+
+  @include tablet {
+    nav {
+      border: 1px solid black;
+      flex-direction: $row;
+    }
+  }
+
+  @include desktop {
+    nav {
+      .bottom-nav-mobile {
+        display: $none;
+      }
+
+      .bottom-nav-large {
+        display: $flex;
+        width: 45vw;
+        justify-content: $between;
+        font-size: 13px;
+        font-weight: $font-weight-700;
+      }
+
+      .bottom-nav-large a {
+        color: $colorWhite;
+      }
+    }
+  }
+
+  .top-nav a {
+    color: $colorWhite;
+    font-weight: $font-weight-700;
+    font-size: 25px;
+  }
+
+  @include desktop {
+    .top-nav {
+      width: 32vw;
+    }
+  }
+
+  .bottom-nav-mobile {
+    width: 60vw;
+
+    @include flexCenter();
+  }
+
+  @include tablet {
+    .bottom-nav-mobile {
+      width: 40vw;
+
+      @include flexCenter();
+    }
+
+    .bottom-nav-large {
+      display: $none;
+    }
+  }
+
+  .bottom-nav-mobile a {
+    color: $colorWhite;
+  }
+}
+
+main {
+  margin-top: 82px;
+
+  .img-container {
+    height: 60vh;
+    display: $flex;
+    flex-direction: $direction;
+    justify-content: $flexstart;
+    align-items: $alignCenter;
+  }
+
+  .img-container h5 {
+    text-shadow: 2px 2px $colorblack;
+  }
+
+  @include tablet {
+    .img-container {
+      height: 60vh;
+      justify-content: $jcenter;
+    }
+
+    .img-container h5 {
+      font-size: 30px;
+    }
+  }
+
+  .search-container {
+    height: 7vh;
+    display: $flex;
+    flex-direction: $direction;
+    justify-content: flex-start;
+    align-items: $alignCenter;
+    background-color: #c1c1c8;
+    width: 45vw;
+    border-radius: 3px;
+    margin-bottom: 1px;
+    opacity: 0.8;
+  }
+
+  @include tablet {
+    .search-container {
+      height: 13vh;
+      width: 55vw;
+      justify-content: $jcenter;
+      background-color: #c1c1c8;
+      margin-bottom: 10px;
+    }
+
+    .form-search-container {
+      @include flexCenter();
+
+      justify-content: $jcenter;
+    }
+  }
+
+  .form-control,
+  .form-search {
+    height: 2vh;
+    border-radius: 0;
+    width: 30vw;
+  }
+
+  @include tablet {
+    .form-control,
+    .form-search {
+      height: 4vh;
+    }
+  }
+
+  .form-search {
+    background-color: $primaryColor;
+    border: 1px solid $primaryColor;
+    margin-top: 2px;
+    width: 10vw;
+    color: $colorWhite;
+    font-size: 7px;
+  }
+
+  @include tablet {
+    .form-search {
+      width: 10vw;
+      padding: 2px;
+      background-color: $nativeBlue;
+      border: 1px solid $nativeBlue;
+      font-size: 10px;
+    }
+  }
+
+  @include desktop {
+    .form-search {
+      background-color: $primaryColor;
+      border: 1px solid $primaryColor;
+    }
+  }
+
+  .key-word {
+    font-size: 8px;
+    color: $colorblack;
+    align-self: $alignEnd;
+    width: 42vw;
+    font-weight: $font-weight-700;
+  }
+
+  @include tablet {
+    .key-word {
+      font-size: 12px;
+      font-weight: $font-weight-700;
+      width: 47.5vw;
+    }
+  }
+
+  .how-it-works {
+    font-size: 12px;
+    background-color: #c1c1c8;
+    color: $colorblack;
+  }
+
+  @include tablet {
+    .how-it-works {
+      font-size: 13px;
+      padding: $padding;
+    }
+  }
+
+  h1 {
+    font-size: 18px;
+    color: $primaryColor;
+    font-weight: $font-weight;
+    margin-top: 40px;
+  }
+
+  @include tablet {
+    h1 {
+      font-size: 20px;
+    }
+  }
+
+  @include desktop {
+    h1 {
+      font-size: 22px;
+      margin-bottom: 30px;
+    }
+  }
+
+  .take-course-container,
+  .take-course-container-2 {
+    background-color: #e27f65;
+    color: $colorWhite;
+  }
+
+  @include tablet {
+    .course {
+      width: 80vw;
+    }
+  }
+
+  @include desktop {
+    .take-course-container {
+      display: $flex;
+      flex-direction: $row;
+      border: 4px solid white;
+    }
+
+    .course {
+      width: 50vw;
+    }
+  }
+
+  .students-img img {
+    width: 40vw;
+    border-radius: 50%;
+    object-fit: cover;
+    filter: brightness(0.7);
+  }
+
+  .search-engine,
+  .team-research,
+  .laptop {
+    font-size: 13px;
+  }
+
+  .find-a-course,
+  .free-sign-up {
+    background-color: #fafdff;
+    color: $primaryColor;
+    width: 100px;
+    height: 3vh;
+    text-align: $textCenter;
+    font-size: 14px;
+    padding: 3px 0;
+    display: $flex;
+    align-items: $alignCenter;
+    justify-content: $jcenter;
+  }
+
+  .take-course-container-2 {
+    background-color: #98a4a5;
+  }
+
+  .free-sign-up {
+    color: $formColor;
+    font-weight: $font-weight-700;
+  }
+
+  .take-course-container-3 {
+    background-color: #509bd7;
+    color: $colorWhite;
+  }
+}
+
+footer {
+  background-color: #000;
+
+  .top-footer-container {
+    height: 10vh;
+    display: $flex;
+    align-items: $alignCenter;
+    justify-content: $jcenter;
+    background-color: #000;
+  }
+
+  @include tablet {
+    .top-footer-container {
+      height: 18vh;
+      position: relative;
+    }
+  }
+
+  .top-footer {
+    font-size: 7px;
+    font-weight: $font-weight;
+    height: 4vh;
+    width: $width-95;
+    color: $colorWhite;
+    border-top: 0.1px solid rgb(83, 79, 79);
+    border-bottom: 0.1px solid rgb(83, 79, 79);
+  }
+
+  @include tablet {
+    .top-footer {
+      font-size: 10px;
+      height: 5vh;
+    }
+  }
+
+  ul {
+    list-style-type: none;
+  }
+
+  .footer-top-icon {
+    display: $none;
+  }
+
+  @include tablet {
+    .footer-top-icon {
+      display: flex;
+      align-items: $alignCenter;
+      justify-content: $jcenter;
+      left: 47%;
+      bottom: 47px;
+      position: absolute;
+      width: 50px;
+      height: 45px;
+      border-radius: $border-radius;
+      border: 1px solid rgb(83, 79, 79);
+      background-color: $colorblack;
+      text-align: $textCenter;
+      color: $colorWhite;
+    }
+  }
+
+  @include desktop-sm {
+    .footer-top-icon {
+      top: 25px;
+    }
+  }
+
+  @include desktop-sm {
+    .top-footer {
+      font-size: 9px;
+      height: 4vh;
+    }
+  }
+
+  @include desktop-sm {
+    .top-footer {
+      font-size: 10px;
+    }
+  }
+
+  @include desktop-sm {
+    .footer-top-icon {
+      width: 60px;
+      height: 55px;
+      left: 47%;
+      bottom: 17px;
+    }
+  }
+
+  .footer-middle-container {
+    display: $none;
+  }
+
+  @include desktop-sm {
+    .footer-middle-container {
+      display: block;
+      background-color: #000;
+      width: $width-95;
+    }
+
+    .eric {
+      background-color: #000;
+      width: 15vw;
+      border: 1px solid rgb(83, 79, 79);
+    }
+
+    .send {
+      width: 7vw;
+      text-align: $textCenter;
+      background-color: rgb(71, 68, 68);
+      border: 1px solid rgb(71, 68, 68);
+    }
+
+    ::placeholder {
+      font-size: 14px;
+      color: $colorWhite;
+    }
+
+    .footer-top-middle,
+    .footer-center-middle,
+    .footer-center-bottom {
+      text-align: $textCenter;
+      width: 30vw;
+    }
+
+    .footer-top-middle p,
+    .footer-center-middle p,
+    .footer-center-bottom p {
+      color: $colorWhite;
+      font-size: 12px;
+    }
+
+    .footer-center-middle-nested span {
+      font-size: 11px;
+      color: $colorWhite;
+    }
+
+    #info-eric,
+    .possibility {
+      color: $primaryColor;
+    }
+  }
+
+  .footer-bottom-wrapper {
+    background-color: #1f1f1f;
+    color: $colorWhite;
+    height: 6vh;
+    display: $flex;
+  }
+
+  @include desktop-sm {
+    .footer-bottom-wrapper {
+      display: $flex;
+      justify-content: $jcenter;
+      height: 10vh;
+    }
+  }
+
+  .footer-bottom-icons {
+    font-size: 10px;
+    width: 40vw;
+  }
+
+  @include desktop-sm {
+    .footer-bottom-icons {
+      width: 20vw;
+    }
+  }
+
+  .power-container {
+    font-size: 9px;
+    font-weight: $font-weight-700;
+    width: 40vw;
+  }
+
+  @include tablet {
+    .power-container {
+      font-size: 11px;
+    }
+  }
+
+  @include desktop-sm {
+    .power-container {
+      display: $flex;
+      justify-content: flex-end;
+    }
+  }
+}
